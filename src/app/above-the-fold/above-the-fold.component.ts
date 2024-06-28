@@ -10,14 +10,15 @@ import { Component } from '@angular/core';
 export class AboveTheFoldComponent {
 
   constructor(){
-    for (let i = 1; i < 4; i++) {
-      setTimeout(() => {
-        this.arrowN = i
-        console.log(this.arrowN);
-      }, 4000);
+
+    // setInterval(() => {
+    //     this.arrowN = this.arrowN % 6
+    //       this.arrowN ++
+    //   }, 350);
     }
-  }
+
+    // constructor finish!
   
-  arrowN : number= 1
+    arrowN : number= 1
 
 }

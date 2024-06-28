@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { AboveTheFoldComponent } from './above-the-fold/above-the-fold.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { AboveTheFoldComponent } from './above-the-fold/above-the-fold.component
     CommonModule,
     RouterOutlet,
     HeaderComponent,
-    AboveTheFoldComponent
+    AboveTheFoldComponent,
+    AboutMeComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
