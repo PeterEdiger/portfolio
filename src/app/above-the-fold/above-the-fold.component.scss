@@ -1,0 +1,66 @@
+p{
+  margin: 0;
+}
+
+.front-end{
+  margin-top: 72px;
+  display: flex;
+  justify-content: center;
+}
+
+.developer{
+  display: flex;
+  justify-content: center;
+  padding: 18px 0;
+}
+
+.stroke-and-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  .stroke{
+    width: 628px;
+    height: 3px;
+    background-color: black;
+  }
+  .name{
+    color: #FF9900;
+    font-family: "overpass";
+    font-weight: 700;
+    font-size: 48px;
+  }
+}
+
+.scroll-down{
+  border: solid blue;
+  margin-top: 64px;
+  display: flex;
+  padding: 0 70px 0 60px; 
+  justify-content: space-between;
+  .email{
+    align-self: flex-end;
+    font-family: "overpass";
+    font-size: 23px;
+  }
+
+  .scroll-d{
+    border: solid orange;
+    align-items: center;
+    span{
+      font-family: "overpass" ;
+    }
+    display: flex;
+    flex-direction: column;
+  }
+
+  .arrow{
+    img{
+      border: solid red;
+      width: 100px;
+      height: 200px;
+    }
+  }
+}
+
+
