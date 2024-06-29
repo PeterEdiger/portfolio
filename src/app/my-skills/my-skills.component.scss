@@ -1,0 +1,50 @@
+.my-skills-wrapper {
+  //  width: 100%;
+  padding: 0 60px;
+  // border: solid green;
+  margin-top: 72px;
+}
+
+.my-skills-rect {
+  position: relative;
+  height: fit-content;
+  border: solid black;
+  padding: 5% 5% 0 5%;
+}
+
+.my-skills {
+  color: black;
+  position: absolute;
+  padding: 0 20px;
+  transform: translate(50%, -50%);
+  background-color: #FFFCF3;
+  top: 0;
+  right: 50%;
+  font-family: "syne";
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.skills-icons-wrapper {
+  // border: solid brown;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  .icons-holder {
+    align-items: center;
+    width: fit-content;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8%;
+  }
+
+  span {
+    font-family: "overpass";
+    font-size: 16px;
+  }
+}

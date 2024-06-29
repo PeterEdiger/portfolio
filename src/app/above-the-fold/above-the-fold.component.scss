@@ -1,57 +1,69 @@
-.above-the-fold-wrapper{
- height: 92vh;
- border: solid red;
- box-sizing: border-box;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
+.above-the-fold-wrapper {
+  height: 90vh;
+  border: solid red;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
-.frontend-dev-wrapper{
+.frontend-dev-wrapper {
   margin-top: 100px;
 }
 
-p{
+p {
   margin: 0;
 }
 
-.front-end{
+.front-end {
   margin-top: 72px;
   display: flex;
   justify-content: center;
+  border: solid green;
+  img{
+    width: 50%
+  }
 }
 
-.developer{
+.developer {
   display: flex;
   justify-content: center;
-  padding: 18px 0;
+  padding-top: 18px;
+  border: solid blue;
+  img{
+    width: 60%
+  }
 }
 
-.stroke-and-name{
+.stroke-and-name {
+  border: solid red;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  .stroke{
-    width: 628px;
+  gap: 16px;
+
+  .stroke {
+    width: 30%;
     height: 3px;
     background-color: black;
   }
-  .name{
+
+  .name {
     color: #FF9900;
     font-family: "overpass";
     font-weight: 700;
-    font-size: 48px;
+    font-size: 36px;
   }
 }
 
-.scroll-down{
+.scroll-down {
   border: solid blue;
   display: flex;
-  padding: 0 70px 0 60px; 
+  padding: 0 70px 0 60px;
   justify-content: space-between;
-  .email{
+
+  .email {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     // text-orientation: upright;
@@ -60,24 +72,24 @@ p{
     font-size: 23px;
   }
 
-  .scroll-d{
+  .scroll-d {
     // border: solid orange;
     align-items: center;
-    span{
-      font-family: "overpass" ;
+
+    span {
+      font-family: "overpass";
       font-size: 23px;
     }
+
     display: flex;
     flex-direction: column;
   }
 
-  .arrow{
-    img{
+  .arrow {
+    img {
       // border: solid red;
       width: 100px;
       height: 200px;
     }
   }
 }
-
-
