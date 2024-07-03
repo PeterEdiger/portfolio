@@ -34,7 +34,7 @@
   position: relative;
   margin: 140px 0;
   display: flex;
-  gap: 80px;
+  // gap: 80px;
   // justify-content: space-between;
   padding: 0 150px;
 
@@ -153,4 +153,10 @@
   animation-name: slidein;
   animation-duration: 0.7s;
   animation-timing-function: ease-out;
+}
+
+.test-div{
+  display: flex;
+  gap: 80px;
+  border: solid blue;
 }

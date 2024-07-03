@@ -18,6 +18,7 @@ export class PortfolioComponent {
   slideIn:boolean = false
   showBorder:string= "none"
   
+  
   rotateArrow(){
     this.slideIn = true;
     this.display= "flex"    
