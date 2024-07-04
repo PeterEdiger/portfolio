@@ -1,0 +1,146 @@
+.portfolio-project-wrapper {
+  border: solid red;
+  position: relative;
+  margin: 140px 0;
+  display: flex;
+  // gap: 80px;
+  // justify-content: space-between;
+  padding: 0 150px;
+
+  .chronologic-number {
+    position: absolute;
+    top: 0;
+    right: 150px;
+    font-family: "syne";
+    font-size: 48px;
+  }
+}
+
+.portfolio-img-wrapper {
+  position: relative;
+  z-index: 3;
+  img {
+    width: 600px;
+  }
+
+  ;
+  
+  // &:hover {
+  //   .portfolio-img-border {
+  //     display: block;
+  //   }
+
+  //   .grayscale {
+  //     filter: none
+  //   }
+  // }
+  
+}
+
+.portfolio-img-border {
+  z-index: 3;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: solid black 2px;
+  width: 100%;
+  height: 100%;
+  // display: none;
+
+  .down-arrow {
+    width: 75px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+}
+
+// .grayscale {
+//   filter: grayscale(100%);
+//   z-index: 10;
+// }
+
+.join-description {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    margin: 0;
+    font-family: "syne";
+    font-weight: 800;
+    font-size: 45px;
+  }
+
+  .technologies{
+    font-family: "overpass";
+    font-size: 23px;
+    color: #FF9900;
+    padding-bottom: 8px;
+  }
+
+  .description{
+    font-family: "overpass";
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+
+.description-btns {
+  display: flex;
+  gap: 40px;
+  
+  div{
+    font-family: "overpass";
+    font-size: 23px;
+  }
+
+  .test-btn, .git-btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 50px;
+    border: solid 4px;
+  }
+
+  .test-btn:hover{
+    transform: scaleX(1.2) translateX(13px);
+    font-weight: 800;
+    cursor: pointer;
+  }
+  
+  .git-btn:hover{
+    transform: scaleX(1.2) translateX(-13px);
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+}
+
+
+//-------------------- ANIMATIONS --------------------//
+
+@keyframes slidein {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.slide-in-left-to-right{
+  animation-name: slidein;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+}
+
+.portfolio-img-description-wrapper{
+  display: flex;
+  gap: 80px;
+  border: solid blue;
+}
