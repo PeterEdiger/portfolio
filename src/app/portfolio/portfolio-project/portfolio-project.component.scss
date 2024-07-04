@@ -2,11 +2,16 @@
   border: solid red;
   position: relative;
   margin: 140px 0;
-  display: flex;
-  flex-direction: row-reverse;
-  // gap: 80px;
-  // justify-content: space-between;
   padding: 0 150px;
+  
+  
+  .portfolio-img-description-wrapper{
+    display: flex;
+    min-width: 100%;
+    // justify-content: space-between;
+    gap: 80px;
+    border: solid blue;
+  }
 
   .chronologic-number {
     position: absolute;
@@ -161,8 +166,3 @@
 
 
 
-.portfolio-img-description-wrapper{
-  display: flex;
-  gap: 80px;
-  border: solid blue;
-}
