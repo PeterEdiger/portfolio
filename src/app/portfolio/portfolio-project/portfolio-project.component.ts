@@ -22,6 +22,7 @@ export class PortfolioProjectComponent {
   showBorder: string = "none";
   grayScale: string = "grayscale(100%)";
   switch: boolean = true;
+  rightToLeft:boolean =  false
 
 
   rotateArrow() {

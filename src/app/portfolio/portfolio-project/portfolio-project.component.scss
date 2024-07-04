@@ -3,6 +3,7 @@
   position: relative;
   margin: 140px 0;
   display: flex;
+  flex-direction: row-reverse;
   // gap: 80px;
   // justify-content: space-between;
   padding: 0 150px;
@@ -133,11 +134,32 @@
   }
 }
 
+
+@keyframes from-right-to-left {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+
+}
+
+.slide-in-right-to-left{
+  animation-name: from-right-to-left;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+
+
+}
 .slide-in-left-to-right{
   animation-name: slidein;
   animation-duration: 0.7s;
   animation-timing-function: ease-out;
 }
+
+
 
 .portfolio-img-description-wrapper{
   display: flex;
