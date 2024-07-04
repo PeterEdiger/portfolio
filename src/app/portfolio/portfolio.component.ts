@@ -11,7 +11,7 @@ import { PortfolioProjectComponent } from './portfolio-project/portfolio-project
 })
 export class PortfolioComponent {
 
-  propertyFromParent = [
+  portfolioProjects = [
     {
       "imgPath": "./assets/img/portfolio/portfolio-join.png",
       "projectName": "Join",
