@@ -27,7 +27,6 @@ export class PortfolioProjectComponent {
   grayScale: string = "grayscale(100%)";
   switch: boolean = true;
   rightToLeft: boolean = false;
-  projectElement: string = "even"
   flexDirection: string = "row"
 
   

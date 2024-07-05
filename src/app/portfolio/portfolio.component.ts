@@ -22,7 +22,6 @@ export class PortfolioComponent {
       "text": "Task manager inspred by the Kanban System",
       "technologies": "Angular | Typescript", 
       "count": "01/2",
-      "oddEven": "even"
     }, 
     {
       "imgPath": "./assets/img/portfolio/portfolio-join.png",
@@ -30,8 +29,6 @@ export class PortfolioComponent {
       "text": "Task manager inspred by the Kanban System",
       "technologies": "Angular | Typescript", 
       "count": "01/2",
-      "oddEven": "odd"
-
     } 
 
   ];
