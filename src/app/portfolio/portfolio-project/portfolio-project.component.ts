@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Input } from '@angular/core'; 
+import { Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 
@@ -11,9 +11,13 @@ import { CommonModule } from '@angular/common';
   styleUrl: './portfolio-project.component.scss'
 })
 export class PortfolioProjectComponent {
-  @Input()projects:any;
+  @Input() projects: any;
+
 
   rotationAngles = [0, -15, -30, -45, -60, -75, -90, -105, -120, -135];
+  rotationAnglesReverse = [0, 15, 30, 45, 60, 75, 90, 105, 120, 135];
+
+
 
   angle: number = 0;
   rotate: string = "";
@@ -22,27 +26,30 @@ export class PortfolioProjectComponent {
   showBorder: string = "none";
   grayScale: string = "grayscale(100%)";
   switch: boolean = true;
-  rightToLeft:boolean =  false
+  rightToLeft: boolean = false;
+  projectElement: string = "even"
+  flexDirection: string = "row"
 
-
+  
   rotateArrow() {
-    if (this.switch) {
-      this.grayScale = "none";
-      this.slideIn = true;
-      this.display = "flex";
-      this.showBorder = "block";
-      for (let i = 0; i < this.rotationAngles.length; i++) {
-        setTimeout(() => {
-          this.angle = this.rotationAngles[i];
-          this.rotate = "translate(50%, -50%) rotate(" + this.angle + "deg)";
-        }, i * 27);
+      if (this.switch) {
+        this.grayScale = "none";
+        this.slideIn = true;
+        this.display = "flex";
+        this.showBorder = "block";
+        for (let i = 0; i < this.rotationAngles.length; i++) {
+          setTimeout(() => {
+            this.angle = this.rotationAngles[i];
+            this.rotate = "translate(50%, -50%) rotate(" + this.angle + "deg)";
+          }, i * 27);
+        }
+        this.angle = 0;
+        // rotates and moves the arrow. 
+        this.rotate = "translate(50%, -50%) rotate(" + this.angle + "deg)";
+        this.switch = false;
+        5;
       }
-      this.angle = 0;
-      this.rotate = "translate(50%, -50%) rotate(" + this.angle + "deg)";
-      this.switch = false;
-    }
   }
-
 
   invisible() {
     this.display = "none";

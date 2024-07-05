@@ -5,18 +5,21 @@
   padding: 0 150px;
   
   
-  .portfolio-img-description-wrapper{
+  .project-flex-container{
     display: flex;
     min-width: 100%;
-    // justify-content: space-between;
+    justify-content: space-between;
     gap: 80px;
     border: solid blue;
+
+
   }
 
   .chronologic-number {
-    position: absolute;
-    top: 0;
-    right: 150px;
+    // position: absolute;
+    // top: 0;
+    // right: 150px;
+    justify-self: flex-end;
     font-family: "syne";
     font-size: 48px;
   }
@@ -129,7 +132,7 @@
 
 //-------------------- ANIMATIONS --------------------//
 
-@keyframes slidein {
+@keyframes left-to-right {
   from {
     transform: translateX(-50%);
   }
@@ -155,11 +158,10 @@
   animation-name: from-right-to-left;
   animation-duration: 0.7s;
   animation-timing-function: ease-out;
-
-
 }
+
 .slide-in-left-to-right{
-  animation-name: slidein;
+  animation-name: left-to-right;
   animation-duration: 0.7s;
   animation-timing-function: ease-out;
 }

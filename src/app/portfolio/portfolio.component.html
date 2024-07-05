@@ -7,11 +7,10 @@
 </div>
 
 
-
-<app-portfolio-project [projects]= "portfolioProjects[0]">
-</app-portfolio-project>
-<app-portfolio-project [projects]= "portfolioProjects[0]">
-</app-portfolio-project>
+@for(item of portfolioProjects; track item; let index = $index){
+  <app-portfolio-project [projects]= item>
+  </app-portfolio-project>
+}
 
 
 

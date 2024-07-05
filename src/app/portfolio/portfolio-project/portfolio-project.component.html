@@ -1,6 +1,9 @@
 <div class="portfolio-project-wrapper">
-  <div class="portfolio-img-description-wrapper" (mouseleave)="invisible()" (mouseover)="rotateArrow()">
-
+  <div class="project-flex-container"
+   [ngStyle]="{'flex-direction': flexDirection}"
+   (mouseleave)="invisible()" 
+   (mouseover)="rotateArrow()"
+   >
     <div class="portfolio-img-wrapper" >
       <img class="grayscale"  [ngStyle]="{'filter': grayScale}" src="./assets/img/portfolio/portfolio-join.png" alt="">
       <div class="portfolio-img-border" [ngStyle]="{'display': showBorder}">
@@ -18,6 +21,6 @@
       </div>
     </div>
 
+    <div class="chronologic-number">01/2</div>
   </div>
-  <div class="chronologic-number">01/2</div>
 </div>
