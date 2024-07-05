@@ -29,3 +29,22 @@
 }
 
 
+.row{
+  flex-direction: row;
+}
+
+.row-reverse{
+  flex-direction: row-reverse
+}
+.even{
+  div{
+    background-color: red;
+  }
+}
+
+.odd{
+  div{
+    background-color: blue;
+
+  }
+}

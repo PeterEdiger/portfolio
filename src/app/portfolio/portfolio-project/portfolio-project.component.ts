@@ -14,6 +14,9 @@ export class PortfolioProjectComponent {
   @Input() projects: any;
 
 
+  constructor(){
+    console.log(this.projects);
+  }
   rotationAngles = [0, -15, -30, -45, -60, -75, -90, -105, -120, -135];
   rotationAnglesReverse = [0, 15, 30, 45, 60, 75, 90, 105, 120, 135];
 
@@ -27,7 +30,7 @@ export class PortfolioProjectComponent {
   grayScale: string = "grayscale(100%)";
   switch: boolean = true;
   rightToLeft: boolean = false;
-  flexDirection: string = "row"
+  flexDirection: string = "row-reverse"
 
   
   rotateArrow() {

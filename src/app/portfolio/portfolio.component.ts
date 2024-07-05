@@ -30,7 +30,6 @@ export class PortfolioComponent {
       "technologies": "Angular | Typescript", 
       "count": "01/2",
     } 
-
   ];
 
 
