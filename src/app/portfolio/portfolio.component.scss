@@ -29,20 +29,29 @@
 }
 
 
-.portfolio-project-wrapper, .portfolio-two-project-wrapper {
+.portfolio-project-wrapper {
   border: solid red;
   position: relative;
   margin: 140px 0;
   padding: 0 150px;
   
   
-  .project-flex-container, .project-two-flex-container{
+  .project-flex-container{
     display: flex;
     min-width: 100%;
     justify-content: space-between;
     gap: 80px;
     border: solid blue;
 
+    &:hover{
+      .join-description{
+        display:flex;
+      }
+    }
+
+    &:hover .portfolio-img-wrapper .portfolio-img-border {
+        display: block;
+    }
 
   }
 
@@ -80,6 +89,7 @@
 .portfolio-img-border {
   z-index: 3;
   position: absolute;
+  display: none;
   top: 10px;
   left: 10px;
   border: solid black 2px;
@@ -103,7 +113,7 @@
 
 .join-description {
   padding-top: 60px;
-  display: flex;
+  display: none;
   flex-direction: column;
 
   h2 {

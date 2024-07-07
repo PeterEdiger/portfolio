@@ -44,26 +44,7 @@ export class PortfolioComponent {
       }
   }
 
-  reverseRotateArrow(){
-    if (this.switch) {
-      this.grayScale = "none";
-      this.slideIn = true;
-      this.display = "flex";
-      this.showBorder = "block";
-      for (let i = 0; i < this.rotationAngles.length; i++) {
-        setTimeout(() => {
-          this.angle = this.rotationAnglesReverse[i];
-          this.rotate = "translate(50%, -50%) rotate(" + this.angle + "deg)";
-        }, i * 27);
-      }
-      this.angle = 0;
-      // rotates and moves the arrow. 
-      this.rotate = "translate(50%, -50%) rotate(" + this.angle + "deg)";
-      this.switch = false;
-      5;
-    }
-  
-  }
+
 
   invisible() {
     this.display = "none";
