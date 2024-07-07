@@ -190,9 +190,7 @@
 
 }
 
-
 //-------------------- ANIMATIONS --------------------//
-
 @keyframes left-to-right {
   from {
     transform: translateX(-50%);
@@ -206,7 +204,7 @@
 
 @keyframes from-right-to-left {
   from {
-    transform: translateX(-50%);
+    transform: translateX(50%);
   }
 
   to {
@@ -226,10 +224,7 @@
   animation-timing-function: ease-out;
 }
 
-
 //-------------------- Flexible Classes --------------------//
-
-
 .flex-d-row-reverse{
   flex-direction: row-reverse;
 }
