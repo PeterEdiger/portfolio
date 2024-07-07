@@ -1,0 +1,22 @@
+.arrow-holder{
+  border: solid orange;
+  padding: 0 150px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-wrapper{
+  border: solid red;
+  position: relative;
+  height: 300px; 
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.triangle-topleft {
+  box-sizing: border-box;
+  width: fit-content;
+  height: 0;
+  border-top: 200px solid #FFFCF3;
+  border-left: 100vw solid transparent;
+}
