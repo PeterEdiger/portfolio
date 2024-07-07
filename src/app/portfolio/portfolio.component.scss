@@ -113,6 +113,15 @@
     right: 0;
     transform: translate(50%, -50%);
   }
+
+  .down-arrow-reverse{
+    width: 75px;
+    position: absolute;
+    top: 50%;
+    left: -12.5%;
+    transform: translate(-50%, -50%);
+
+  }
 }
 
 .grayscale {
@@ -203,7 +212,6 @@
   to {
     transform: translateX(0%);
   }
-
 }
 
 .slide-in-right-to-left {
@@ -216,4 +224,12 @@
   animation-name: left-to-right;
   animation-duration: 0.7s;
   animation-timing-function: ease-out;
+}
+
+
+//-------------------- Flexible Classes --------------------//
+
+
+.flex-d-row-reverse{
+  flex-direction: row-reverse;
 }
