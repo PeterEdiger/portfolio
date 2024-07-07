@@ -15,42 +15,21 @@ export class PortfolioComponent {
 
   angle: number = 0;
   rotate: string = "";
-  display: string = "none";
-  slideIn: boolean = false;
-  showBorder: string = "none";
-  grayScale: string = "grayscale(100%)";
-  switch: boolean = true;
-  rightToLeft: boolean = false;
-  flexDirection: string = "row"
 
   
   rotateArrow() {
-      if (this.switch) {
-        this.grayScale = "none";
-        this.slideIn = true;
-        this.display = "flex";
-        this.showBorder = "block";
         for (let i = 0; i < this.rotationAngles.length; i++) {
           setTimeout(() => {
             this.angle = this.rotationAngles[i];
             this.rotate = "translate(50%, -50%) rotate(" + this.angle + "deg)";
           }, i * 27);
         }
-        this.angle = 0;
-        // rotates and moves the arrow. 
-        this.rotate = "translate(50%, -50%) rotate(" + this.angle + "deg)";
-        this.switch = false;
-        5;
-      }
   }
 
 
-
   invisible() {
-    this.display = "none";
-    this.showBorder = "none";
-    this.grayScale = "grayscale(100%)";
-    this.switch = true;
+    this.angle = 0;
+    this.rotate = "translate(50%, -50%) rotate(" + this.angle + "deg)";
   }
 
 

@@ -34,26 +34,8 @@
   position: relative;
   margin: 140px 0;
   padding: 0 150px;
-  
-  
-  .project-flex-container{
-    display: flex;
-    min-width: 100%;
-    justify-content: space-between;
-    gap: 80px;
-    border: solid blue;
 
-    &:hover{
-      .join-description{
-        display:flex;
-      }
-    }
 
-    &:hover .portfolio-img-wrapper .portfolio-img-border {
-        display: block;
-    }
-
-  }
 
   .chronologic-number {
     // position: absolute;
@@ -68,12 +50,13 @@
 .portfolio-img-wrapper {
   position: relative;
   z-index: 3;
+
   img {
     width: 600px;
   }
 
   ;
-  
+
   // &:hover {
   //   .portfolio-img-border {
   //     display: block;
@@ -83,8 +66,34 @@
   //     filter: none
   //   }
   // }
-  
+
 }
+
+
+.project-flex-container {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+  gap: 80px;
+  border: solid blue;
+
+  &:hover {
+    .join-description {
+      display: flex;
+    }
+  }
+
+  &:hover .portfolio-img-wrapper .portfolio-img-border {
+    display: block;
+  }
+
+  &:hover .portfolio-img-wrapper .grayscale {
+    filter: none;
+  }
+
+
+}
+
 
 .portfolio-img-border {
   z-index: 3;
@@ -106,10 +115,11 @@
   }
 }
 
-// .grayscale {
-//   filter: grayscale(100%);
-//   z-index: 10;
-// }
+.grayscale {
+  filter: grayscale(100%);
+  z-index: 10;
+}
+
 
 .join-description {
   padding-top: 60px;
@@ -123,14 +133,14 @@
     font-size: 45px;
   }
 
-  .technologies{
+  .technologies {
     font-family: "overpass";
     font-size: 23px;
     color: #FF9900;
     padding-bottom: 8px;
   }
 
-  .description{
+  .description {
     font-family: "overpass";
     font-size: 16px;
     padding-bottom: 16px;
@@ -141,14 +151,15 @@
 .description-btns {
   display: flex;
   gap: 40px;
-  
-  div{
+
+  div {
     font-family: "overpass";
     font-size: 23px;
   }
 
-  .test-btn, .git-btn{
-    display:flex;
+  .test-btn,
+  .git-btn {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 140px;
@@ -156,13 +167,13 @@
     border: solid 4px;
   }
 
-  .test-btn:hover{
+  .test-btn:hover {
     transform: scaleX(1.2) translateX(13px);
     font-weight: 800;
     cursor: pointer;
   }
-  
-  .git-btn:hover{
+
+  .git-btn:hover {
     transform: scaleX(1.2) translateX(-13px);
     font-weight: 800;
     cursor: pointer;
@@ -195,16 +206,14 @@
 
 }
 
-.slide-in-right-to-left{
+.slide-in-right-to-left {
   animation-name: from-right-to-left;
   animation-duration: 0.7s;
   animation-timing-function: ease-out;
 }
 
-.slide-in-left-to-right{
+.slide-in-left-to-right {
   animation-name: left-to-right;
   animation-duration: 0.7s;
   animation-timing-function: ease-out;
 }
-
-

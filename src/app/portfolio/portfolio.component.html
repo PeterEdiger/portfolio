@@ -15,12 +15,11 @@
 
 <div class="portfolio-project-wrapper">
   <div class="project-flex-container"
-   [ngStyle]="{'flex-direction': flexDirection}"
+   (mouseover)="rotateArrow()" 
+   (mouseleave)="invisible()" 
    >
-   <!-- (mouseleave)="invisible()" 
-   (mouseover)="rotateArrow()" -->
     <div class="portfolio-img-wrapper" >
-      <img class="grayscale"  [ngStyle]="{'filter': grayScale}" src="./assets/img/portfolio/portfolio-join.png" alt="">
+      <img class="grayscale"  src="./assets/img/portfolio/portfolio-join.png" alt="">
       <div class="portfolio-img-border">
         <img [ngStyle]="{'transform': rotate}"
                class="down-arrow" src="./assets/img/portfolio/arrow-down.png" alt="">
@@ -35,7 +34,7 @@
         <div class="git-btn">Git</div>
       </div>
     </div>
-    <div class="chronologic-number">01/2</div>
+    <div class="chronologic-number"> {{portfolioProjects[0].count}} </div>
   </div>
 </div>
 
