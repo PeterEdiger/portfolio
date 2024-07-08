@@ -2,7 +2,27 @@
   <img src="./assets/img/contact-form/left-arrow.png" alt="">
 </div>
 
-<div class="form-wrapper">
+<div class="black-container">
   <div class="triangle-topleft"></div>
+  
+  <div class="say-hi">
+    <img src="./assets/img/contact-form/say-hi.png" alt="">
+  </div>
+
+  <div class="discuss-new-project d-flex-j-c">Want to discuss a new project?</div>
+  <div class="say-hello d-flex-j-c">Say hello! let's discuss your ideas and make it happen</div>
+
+  <div class="form-wrapper d-flex-j-c">
+    <!-- Submitting form data in Angular. -->
+    <form class="d-flex column" (ngSubmit)="onSubmit()">
+      <label for="name">Your name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="off"> 
+      <label for="name">Your name</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="off"> 
+      <label for="message" autocomplete="off">Subject</label>
+      <textarea name="message" id="message" placeholder="Your Message"></textarea>
+      <input type="submit" value="Submit"> 
+    </form>
+  </div>
 </div>
 

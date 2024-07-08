@@ -5,10 +5,10 @@
   justify-content: flex-end;
 }
 
-.form-wrapper{
+.black-container{
   border: solid red;
   position: relative;
-  height: 300px; 
+  height: fit-content; 
   background-color: black;
   overflow-x: hidden;
 }
@@ -19,4 +19,59 @@
   height: 0;
   border-top: 200px solid #FFFCF3;
   border-left: 100vw solid transparent;
+}
+
+.say-hi{
+  padding-left: 150px;
+  padding-bottom: 32px;
+}
+
+.discuss-new-project{
+  font-family: "overpass";
+  font-weight: 700;
+  font-size: 32px;
+  color: #FF9900;
+  padding-bottom: 16px;
+}
+
+.say-hello{
+  font-family: "overpass";
+  font-weight: 400;
+  font-size: 23px;
+  color: #F2EFE7;
+}
+
+.form-wrapper{
+  border: solid orange;
+}
+
+form{
+  width: 600px;
+}
+
+.name{
+  width: 400px;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.form-wrapper input::placeholder,
+.form-wrapper textarea::placeholder {
+  font-family: 'overpass', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.form-wrapper textarea {
+  height: 150px; /* Adjust the height as needed */
 }

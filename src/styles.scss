@@ -17,7 +17,18 @@ body{
 }
 
 
-// app-above-the-fold{
-//   height: 1500px;
-// }
+//------------------------- Flexible classes -------------------------//
+
+.d-flex{
+  display: flex;
+}
+
+.column{
+  flex-direction: column;
+}
+
+.d-flex-j-c{
+  display: flex;
+  justify-content: center;
+}
 
