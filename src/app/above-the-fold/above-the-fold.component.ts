@@ -11,10 +11,10 @@ export class AboveTheFoldComponent {
 
   constructor(){
 
-    // setInterval(() => {
-    //     this.arrowN = this.arrowN % 6
-    //       this.arrowN ++
-    //   }, 350);
+    setInterval(() => {
+        this.arrowN = this.arrowN % 6
+          this.arrowN ++
+      }, 350);
     }
 
     // constructor finish!

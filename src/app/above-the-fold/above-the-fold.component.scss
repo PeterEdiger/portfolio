@@ -1,6 +1,6 @@
 .above-the-fold-wrapper {
-  height: 90vh;
-  border: solid red;
+  height: 84vh;
+  // border: solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@ p {
   margin-top: 72px;
   display: flex;
   justify-content: center;
-  border: solid green;
+  // border: solid green;
   img{
     width: 50%
   }
@@ -30,14 +30,14 @@ p {
   display: flex;
   justify-content: center;
   padding-top: 18px;
-  border: solid blue;
+  // border: solid blue;
   img{
     width: 60%
   }
 }
 
 .stroke-and-name {
-  border: solid red;
+  // border: solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@ p {
 }
 
 .scroll-down {
-  border: solid blue;
+  // border: solid blue;
   display: flex;
   padding: 0 70px 0 60px;
   justify-content: space-between;
