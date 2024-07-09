@@ -18,7 +18,6 @@ body{
 
 
 //------------------------- Flexible classes -------------------------//
-
 .d-flex{
   display: flex;
 }
@@ -32,3 +31,7 @@ body{
   justify-content: center;
 }
 
+.center-all{
+  justify-content: center;
+  align-items: center;
+}

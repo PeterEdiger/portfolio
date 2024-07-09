@@ -1,3 +1,7 @@
+*input{
+  background-color: black;
+}
+
 .arrow-holder{
   border: solid orange;
   padding: 0 150px;
@@ -41,12 +45,19 @@
   color: #F2EFE7;
 }
 
+
+// -------------------- FORM -------------------- // 
 .form-wrapper{
   border: solid orange;
 }
 
 form{
   width: 600px;
+
+  input{
+    width: 100%;
+  }
+  // border: solid red;
 }
 
 .name{
@@ -74,4 +85,65 @@ form{
 
 .form-wrapper textarea {
   height: 150px; /* Adjust the height as needed */
+}
+
+.submit-btn{
+  margin: 0 auto;
+  width: 289px;
+  height: 68px;
+  padding: 30px 10px;
+  border:solid #BBBBBB 4px;
+  background-color: black;  
+  opacity: 30%;
+  cursor: pointer;
+
+  span{
+    color: #BBBBBB;
+    font-family: "overpass";
+    font-weight: 400;
+    font-size: 23px;
+  }
+}
+
+.enter-message{
+ color: orange
+}
+
+.textarea-wrapper{
+  position: relative;
+
+  textarea{
+    width: 100%;
+  }
+
+  span{
+    position:absolute;
+    top: 5%;
+    right: 5%;
+    font-family: "overpass";
+  }
+}
+
+.email-input-wrapper {
+  position: relative;
+  span{
+    position:absolute;
+    top: 5%;
+    right: 5%;
+    font-family: "overpass";
+  }
+}
+
+.name-input-wrapper {
+  position: relative;
+  span{
+    position:absolute;
+    top: 5%;
+    right: 5%;
+    font-family: "overpass";
+  }
+}
+
+label{
+  color: red;
 }

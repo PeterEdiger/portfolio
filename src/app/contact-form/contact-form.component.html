@@ -14,14 +14,33 @@
 
   <div class="form-wrapper d-flex-j-c">
     <!-- Submitting form data in Angular. -->
-    <form class="d-flex column" (ngSubmit)="onSubmit()">
-      <label for="name">Your name</label>
-      <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="off"> 
-      <label for="name">Your name</label>
-      <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="off"> 
-      <label for="message" autocomplete="off">Subject</label>
-      <textarea name="message" id="message" placeholder="Your Message"></textarea>
-      <input type="submit" value="Submit"> 
+    <form class="d-flex column" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+      
+      <div class="name-input-wrapper">
+        <input #name="ngModel" [(ngModel)]= "contactData.name" type="text" id="name" name="name" placeholder="Your Name" autocomplete="off" required> 
+        @if(!name.valid && message.touched){
+          <span class="enter-message">Please enter a name</span>
+        }
+      </div>
+
+      <div class="email-input-wrapper">
+        <input #email="ngModel" [(ngModel)]= "contactData.email" type="email" id="email" name="email" placeholder="Your Email" autocomplete="off" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"> 
+        @if(!email.valid && message.touched){
+          <span class="enter-message">Please enter a valid email</span>
+        }
+      </div>
+      
+      <div class="textarea-wrapper">
+        <textarea #message = "ngModel" minlength="4" [(ngModel)]= "contactData.message" name="message" id="message" placeholder="Your Message" required></textarea>
+        @if(!message.valid && message.touched){
+          <span class="enter-message">Please enter a message</span>
+        }
+      </div>
+
+      <button class="submit-btn d-flex center-all">
+        <span>Send message</span>
+      </button>
+
     </form>
   </div>
 </div>
