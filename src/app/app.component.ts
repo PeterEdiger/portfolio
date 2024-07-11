@@ -8,6 +8,7 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 
 @Component({
@@ -17,12 +18,8 @@ import { FooterComponent } from './shared/footer/footer.component';
     CommonModule,
     RouterOutlet,
     HeaderComponent,
-    AboveTheFoldComponent,
-    AboutMeComponent,
-    MySkillsComponent,
-    PortfolioComponent,
-    ContactFormComponent, 
     FooterComponent,
+    MainPageComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
