@@ -1,0 +1,57 @@
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  // border: solid green;
+}
+
+.footer-wrapper{
+  padding: 56px 150px;
+  background-color: black;
+}
+
+.initials-copyright-container {
+  span{
+    font-family: "poppins";
+    font-size: 23px;
+    color: white;
+  }
+  img{
+    width: 50px;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+  }
+}
+
+.footer-icons-container {
+  position:relative;
+  gap: 16px;
+  // border: solid red;
+  width: fit-content;
+  justify-content: flex-end;
+
+  img{
+    width: 30px;
+    height: 30px;
+  }
+
+  .arrow-up-white{
+    width: 35px;
+    height: 52px;
+    position: absolute; 
+    right: 0;
+    top: -128px;
+  }
+}
+
+.legal-notice-container{
+  color: white;
+  width: 100%;
+  font-family: "overpass";
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-end;
+  // border: solid green;  
+}
