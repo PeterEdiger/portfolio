@@ -12,6 +12,7 @@
   <div class="discuss-new-project d-flex-j-c">Want to discuss a new project?</div>
   <div class="say-hello d-flex-j-c">Say hello! let's discuss your ideas and make it happen</div>
 
+
   <div class="form-wrapper d-flex-j-c">
     <!-- Submitting form data in Angular. -->
     <form class="d-flex column" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
@@ -35,6 +36,13 @@
         @if(!message.valid && message.touched){
           <span class="enter-message">Please enter a message</span>
         }
+      </div>
+
+      <div class="checkbox-wrapper">
+        <div>
+          <input type="checkbox" id="consent" name="consent" required>
+        </div>
+        <label id="terms">I've read the privacy policy and agree to the processing of my data as outlined</label>
       </div>
 
       <button class="submit-btn d-flex center-all">

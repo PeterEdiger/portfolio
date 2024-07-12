@@ -4,3 +4,61 @@ header{
   padding: 20px 60px;
   align-items: center;
 }
+
+.burger-dialog{
+  // display: none;
+  border: solid orange;
+  background-color: #FFFCF3;
+  position: fixed;
+  height: 100%;
+  z-index: 2;
+  top: 90px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+
+.d-none{
+  display: none;
+}
+
+.triangle-topleft {
+  margin-top: auto;
+  box-sizing: border-box;
+  width: fit-content;
+  height: 0;
+  border-bottom: 200px solid black;
+  border-right: 150vw solid transparent;
+}
+
+.burger-links-container{
+  margin-top: 10%;
+  align-self: center;
+  justify-self: center;
+  span{
+    position:relative;
+    font-family: "syne";
+    font-weight: 700;
+    font-size: 96px;
+    &:hover{
+      cursor:pointer;
+      opacity: 0.8;
+    }
+  }
+}
+
+.small-rectangle{
+  position: absolute;
+  width: 39px;
+  height: 35px;
+  bottom: 0;
+  left: -20px;;
+  border-left: solid black;
+  border-bottom: solid black;
+}
