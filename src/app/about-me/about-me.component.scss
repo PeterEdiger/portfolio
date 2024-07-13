@@ -1,3 +1,4 @@
+@import "../../styles.scss";
 
 //-------------- wrappers ------------------//
 .about-me{
@@ -13,15 +14,16 @@
 
 .about-me__text-photo{
   // width: 100%;
+  @include responsive-padding;
   border: solid orange;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   padding: 0 70px 0 60px;
   justify-content: space-between;
   gap: 30px;
 }
 
-.text-button{
+.text-and-button-container{
   border: solid blue;
   display: flex;
   flex-direction: column;
@@ -30,7 +32,7 @@
     font-family: "overpass";
     font-size: 23px;
   }
-  .talk-btn{
+  .let-us-talk-btn{
     align-self: center;
   }
 }
@@ -61,6 +63,16 @@
     img{
       width: 85%;
     }
+  }
+
+  .text-and-button-container{
+    .let-us-talk-btn{
+      display: none;
+    }
+  }
+
+  .left-arrow{
+    width: 200px;
   }
 
 }
