@@ -1,6 +1,11 @@
+
+@import "../../styles.scss";
+
 .above-the-fold-wrapper {
   height: 84vh;
-  // border: solid red;
+  margin: 0;
+  width: 100%;
+  border: solid blue;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -20,7 +25,7 @@ p {
   margin-top: 72px;
   display: flex;
   justify-content: center;
-  // border: solid green;
+  border: solid green;
   img{
     width: 50%
   }
@@ -58,6 +63,7 @@ p {
 }
 
 .scroll-down {
+  @include responsive-padding;
   // border: solid blue;
   display: flex;
   padding: 0 70px 0 60px;
@@ -87,9 +93,49 @@ p {
 
   .arrow {
     img {
-      // border: solid red;
+      border: solid red;
       width: 100px;
       height: 200px;
     }
   }
+}
+
+// ------------------------- RESPONSIVNESS ------------------------- //
+@media(max-width: 750px){
+  .stroke-and-name{
+    .name{
+      font-size: 24px;
+    }
+    .stroke{
+      width: 20%;
+    }
+  } 
+  .developer{
+    padding-top: 5px;
+  }
+
+  .scroll-down{
+
+    .arrow {
+      img {
+        border: solid blue;
+        width: 50px;
+        height: 100px;
+      }
+  }
+}
+
+}
+
+@media(max-width: 450px){
+  .stroke-and-name{
+    .name{
+      font-size: 16px;
+    }
+    .stroke{
+      height: 1.5px
+    }
+  }
+  
+  
 }

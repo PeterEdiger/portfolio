@@ -40,3 +40,24 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+//------------------------- VARIABLES -------------------------//
+
+$padding-default: 60px;
+$padding-medium: 40px;
+$padding-small: 20px;
+
+@mixin responsive-padding {
+  padding-left: $padding-default;
+  padding-right: $padding-default;
+
+  @media (max-width: 750px) {
+    padding-left: $padding-medium;
+    padding-right: $padding-medium;
+  }
+
+  @media (max-width: 450px) {
+    padding-left: $padding-small;
+    padding-right: $padding-small;
+  }
+}
