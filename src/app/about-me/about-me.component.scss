@@ -17,7 +17,7 @@
   @include responsive-padding;
   border: solid orange;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   padding: 0 70px 0 60px;
   justify-content: space-between;
   gap: 30px;
@@ -44,7 +44,6 @@
 }
 
 //-------------- single styles ------------------//
-
 .face-hero{
   width: 300px;
   border: solid red;
@@ -54,6 +53,8 @@
   transform: translateX(-40%);
 }
 
+
+// ---------------------------------- RESPONSIVNESS ---------------------------------- //
 @media(max-width: 750px){
   .about-me{
     display: flex;
@@ -75,4 +76,7 @@
     width: 200px;
   }
 
+ .about-me__text-photo{
+  flex-direction: column;
+ } 
 }

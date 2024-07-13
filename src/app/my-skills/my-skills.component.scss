@@ -1,5 +1,8 @@
+@import "../../styles.scss";
+
 .my-skills-wrapper {
   //  width: 100%;
+  @include responsive-padding;
   padding: 0 60px;
   border: solid green;
   margin-top: 72px;
@@ -15,7 +18,7 @@
 .my-skills {
   color: black;
   position: absolute;
-  padding: 0 20px;
+  padding: 0 10px;
   transform: translate(50%, -50%);
   background-color: #FFFCF3;
   top: 0;
@@ -46,5 +49,51 @@
   span {
     font-family: "overpass";
     font-size: 16px;
+  }
+}
+
+
+//--------------------- RESPONSIVNESS ----------------------- //
+
+@media (max-width: 1200px) {
+  .my-skills{
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 915px) {
+  .my-skills{
+    font-size: 30px;
+  }
+
+  .icons-holder{
+    img{
+      width: 50px;
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .my-skills{
+    font-size: 24px;
+  }
+
+  .right-arrow{
+    width: 200px;
+  }
+
+}
+
+@media (max-width: 520px) {
+
+  .my-skills{
+    font-size: 16px;
+    padding: 0 5px;
+  }
+
+  .icons-holder{
+    img{
+      width: 35px;
+    }
   }
 }
