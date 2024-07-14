@@ -38,8 +38,6 @@
   margin: 140px 0;
 
 
-
-
   .chronologic-number {
     position: absolute;
     top: 0;
@@ -48,6 +46,11 @@
     font-family: "syne";
     font-size: 48px;
   }
+}
+
+
+.chronologic-number-even{
+  left: 150px;
 }
 
 .portfolio-img-wrapper {
@@ -63,7 +66,7 @@
 .project-flex-container {
   display: flex;
   min-width: 100%;
-  justify-content: space-between;
+  
   gap: 80px;
   border: solid blue;
 
