@@ -37,21 +37,19 @@
   position: relative;
   margin: 140px 0;
 
-
   .chronologic-number {
     position: absolute;
     top: 0;
     right: 150px;
-    // justify-self: flex-end;
     font-family: "syne";
     font-size: 48px;
   }
+
+  .chronologic-number-even{
+    left: 150px;
+  }
 }
 
-
-.chronologic-number-even{
-  left: 150px;
-}
 
 .portfolio-img-wrapper {
   position: relative;
@@ -65,7 +63,7 @@
 
 .project-flex-container {
   display: flex;
-  min-width: 100%;
+  width: 100%;
   
   gap: 80px;
   border: solid blue;
@@ -114,6 +112,7 @@
 
   }
 }
+
 
 .grayscale {
   filter: grayscale(100%);
@@ -181,6 +180,7 @@
 
 }
 
+
 //-------------------- ANIMATIONS --------------------//
 @keyframes left-to-right {
   from {
@@ -222,6 +222,28 @@
 
 
 //-------------------- RESPONSIVNESS --------------------//
+@media(max-width: 1110px){
+// the red one
+  .project-flex-container{
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .portfolio-project-wrapper{
+    display: flex;
+    justify-content: center;
+
+    .chronologic-number{
+      top: -80px ;
+      right: 24px;
+    }
+
+    .chronologic-number-even{
+      left: 24px;
+    }
+  }
+}
+
 
 @media(max-width: 420px) {
   .header-container{
