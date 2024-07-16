@@ -45,8 +45,9 @@
     font-size: 48px;
   }
 
-  .chronologic-number-even{
+  .chronologic-number-even {
     left: 150px;
+    width: fit-content
   }
 }
 
@@ -64,13 +65,19 @@
 .project-flex-container {
   display: flex;
   width: 100%;
-  
+  align-items: center;
+
   gap: 80px;
   border: solid blue;
 
   &:hover {
-    .join-description {
+    .project-description {
       display: flex;
+      animation: left-to-right 1s forwards;
+    }
+    .project-description-even{
+      display: flex;
+      animation: right-to-left 1s forwards;
     }
   }
 
@@ -93,7 +100,6 @@
   border: solid black 2px;
   width: 100%;
   height: 100%;
-  // display: none;
 
   .down-arrow {
     width: 75px;
@@ -120,8 +126,8 @@
 }
 
 
-.join-description {
-  padding-top: 60px;
+.project-description, .project-description-even  {
+  // padding-top: 60px;
   display: none;
   flex-direction: column;
 
@@ -193,7 +199,7 @@
 }
 
 
-@keyframes from-right-to-left {
+@keyframes right-to-left {
   from {
     transform: translateX(50%);
   }
@@ -202,6 +208,18 @@
     transform: translateX(0%);
   }
 }
+
+@keyframes top-to-bottom {
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+
 
 .slide-in-right-to-left {
   animation-name: from-right-to-left;
@@ -215,6 +233,13 @@
   animation-timing-function: ease-out;
 }
 
+.slide-in-top-to-bottom {
+  display: none;
+  animation-name: top-to-bottom;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+}
+
 //-------------------- Flexible Classes --------------------//
 .flex-d-row-reverse {
   flex-direction: row-reverse;
@@ -222,31 +247,48 @@
 
 
 //-------------------- RESPONSIVNESS --------------------//
-@media(max-width: 1110px){
-// the red one
-  .project-flex-container{
+@media(max-width: 1110px) {
+
+  .project-flex-container {
     flex-direction: column;
     width: fit-content;
+    gap: 32;
+    align-items: flex-start;
   }
 
-  .portfolio-project-wrapper{
+
+  .portfolio-project-wrapper {
     display: flex;
     justify-content: center;
 
-    .chronologic-number{
-      top: -80px ;
+    .chronologic-number {
+      top: -80px;
       right: 24px;
     }
 
-    .chronologic-number-even{
+    .chronologic-number-even {
       left: 24px;
     }
   }
+
+
+  .project-flex-container:hover .project-description  {
+    display: flex;
+  }
+
+  .project-flex-container:hover .project-description {
+    animation: top-to-bottom 1s forwards;
+  }
+  .project-flex-container:hover .project-description-even {
+    animation: top-to-bottom 1s forwards;
+  }
+
+
 }
 
 
 @media(max-width: 420px) {
-  .header-container{
+  .header-container {
     .header-wrapper {
       h2 {
         font-size: 56px;
