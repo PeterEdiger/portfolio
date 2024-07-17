@@ -1,12 +1,21 @@
+@import "../../styles.scss";
+
 *input{
   background-color: black;
 }
 
 .arrow-holder{
   border: solid orange;
-  padding: 0 150px;
+  // padding: 0 150px;
+  @include responsive-padding;
   display: flex;
   justify-content: flex-end;
+}
+
+.arrow-holder{
+  img{
+    width: 45%;
+  }
 }
 
 .black-container{
@@ -168,4 +177,29 @@ label{
 
 // --------------------------- RESPONSIVNESS ---------------------------//
 
+
+//-------------------- 1110px --------------------//
+@media(max-width: 1110px) {
+
+}
+
+//-------------------- 740px --------------------//
+@media(max-width: 1110px) {
+
+}
+
+//-------------------- 1110px --------------------//
+@media(max-width: 1110px) {
+
+}
+
+//-------------------- 1110px --------------------//
+@media(max-width: 1110px) {
+
+}
+
+//-------------------- 1110px --------------------//
+@media(max-width: 1110px) {
+
+}
 
