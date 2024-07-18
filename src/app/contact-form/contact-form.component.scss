@@ -1,27 +1,22 @@
 @import "../../styles.scss";
 
-*input{
+*input {
   background-color: black;
 }
 
-.arrow-holder{
+.arrow-holder {
   border: solid orange;
+  margin-top: 50px;
   // padding: 0 150px;
-  @include responsive-padding;
+  // @include responsive-padding;
   display: flex;
   justify-content: flex-end;
 }
 
-.arrow-holder{
-  img{
-    width: 45%;
-  }
-}
-
-.black-container{
+.black-container {
   border: solid red;
   position: relative;
-  height: fit-content; 
+  height: fit-content;
   background-color: black;
   overflow-x: hidden;
 }
@@ -30,46 +25,60 @@
   box-sizing: border-box;
   width: fit-content;
   height: 0;
-  border-top: 200px solid #FFFCF3;
+  border-top: 152px solid #FFFCF3;
   border-left: 100vw solid transparent;
 }
 
-.say-hi{
-  padding-left: 150px;
+.say-hi {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  padding-left: 7%;
   padding-bottom: 32px;
+  border: solid orange;
 }
 
-.discuss-new-project{
+.say-hi {
+  img {
+    width: calc(200px + 15vw)
+  }
+}
+
+.discuss-new-project {
   font-family: "overpass";
-  font-weight: 700;
+  font-weight: 900;
   font-size: 32px;
   color: #FF9900;
-  padding-bottom: 16px;
+  padding: 32px 0 16px 0;
 }
 
-.say-hello{
+.say-hello {
   font-family: "overpass";
   font-weight: 400;
   font-size: 23px;
   color: #F2EFE7;
+  @include responsive-padding;
 }
 
 
 // -------------------- FORM -------------------- // 
-.form-wrapper{
+.form-wrapper {
   border: solid orange;
+  @include responsive-padding;
+  margin-top: 24px;
 }
 
-form{
+form {
   width: 600px;
 
-  input{
+  input {
     width: 100%;
   }
+
   // border: solid red;
 }
 
-.name{
+.name {
   width: 400px;
 }
 
@@ -93,21 +102,22 @@ form{
 }
 
 .form-wrapper textarea {
-  height: 150px; /* Adjust the height as needed */
+  height: 150px;
+  /* Adjust the height as needed */
 }
 
-.submit-btn{
+.submit-btn {
   margin: 0 auto;
   margin-top: 24px;
-  width: 289px;
-  height: 68px;
-  padding: 30px 10px;
-  border:solid #BBBBBB 4px;
-  background-color: black;  
+  width: 252px;
+  height: 60px;
+  // padding: 30px 10px;
+  border: solid #BBBBBB 4px;
+  background-color: black;
   opacity: 30%;
   cursor: pointer;
 
-  span{
+  span {
     color: #BBBBBB;
     font-family: "overpass";
     font-weight: 400;
@@ -115,19 +125,19 @@ form{
   }
 }
 
-.enter-message{
- color: orange
+.enter-message {
+  color: orange
 }
 
-.textarea-wrapper{
+.textarea-wrapper {
   position: relative;
 
-  textarea{
+  textarea {
     width: 100%;
   }
 
-  span{
-    position:absolute;
+  span {
+    position: absolute;
     top: 5%;
     right: 5%;
     font-family: "overpass";
@@ -136,8 +146,9 @@ form{
 
 .email-input-wrapper {
   position: relative;
-  span{
-    position:absolute;
+
+  span {
+    position: absolute;
     top: 5%;
     right: 5%;
     font-family: "overpass";
@@ -146,23 +157,26 @@ form{
 
 .name-input-wrapper {
   position: relative;
-  span{
-    position:absolute;
+
+  span {
+    position: absolute;
     top: 5%;
     right: 5%;
     font-family: "overpass";
   }
 }
 
-.checkbox-wrapper{
-  display:flex;
+.checkbox-wrapper {
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
-  div{
+
+  div {
     height: 18px;
   }
-  label{
+
+  label {
     font-family: "overpass";
     color: #383838;
     font-size: 16px;
@@ -170,8 +184,7 @@ form{
 }
 
 
-
-label{
+label {
   color: red;
 }
 
@@ -179,27 +192,95 @@ label{
 
 
 //-------------------- 1110px --------------------//
-@media(max-width: 1110px) {
-
-}
+@media(max-width: 1110px) {}
 
 //-------------------- 740px --------------------//
-@media(max-width: 1110px) {
+@media(max-width: 740px) {
+  .arrow-holder {
+    img {
+      width: 200px;
+    }
+  }
+
+  .triangle-topleft {
+    border-top: 112px solid #FFFCF3;
+  }
+
+  .say-hello{
+    font-size: 16px;
+  }
+
+  .discuss-new-project {
+    font-size: 20px;
+    padding-top: 60px;
+  }
+
+  .submit-btn{
+    width: calc(252px * 0.8);
+    height: calc(60px * 0.8);
+    span{
+      font-size: calc(20px * 0.9) ;
+    }
+  }
+  
+}
+
+//-------------------- 540px --------------------//
+@media(max-width: 540px) {
+  .triangle-topleft {
+    border-top: 80px solid #FFFCF3;
+  }
+
+  .say-hello{
+    font-size: 14px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .discuss-new-project {
+    padding-top: 80px;
+  }
+
+
+  .form-wrapper input::placeholder,
+  .form-wrapper textarea::placeholder
+  {
+    font-size: 14px;
+  }
+  
+  .checkbox-wrapper{
+    label{
+      font-size: 14px;
+    }
+  }
+
+  .submit-btn{
+    width: calc(252px * 0.8 * 0.7);
+    height: calc(60px * 0.8 * 0.8);
+    span{
+      font-size: calc(20px * 0.9 * 0.8) ;
+    }
+  }
 
 }
 
-//-------------------- 1110px --------------------//
-@media(max-width: 1110px) {
+//-------------------- 450px --------------------//
+@media(max-width: 450px) {
+  .triangle-topleft {
+    border-top: 56px solid #FFFCF3;
+  }
+
+  .discuss-new-project {
+    font-size: 18px;
+  }
+
 
 }
 
-//-------------------- 1110px --------------------//
-@media(max-width: 1110px) {
+//-------------------- 380px --------------------//
+@media(max-width: 380px) {
+  .say-hello {
+    font-size: 14px;
+  }
 
 }
-
-//-------------------- 1110px --------------------//
-@media(max-width: 1110px) {
-
-}
-
