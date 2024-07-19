@@ -2,11 +2,19 @@
 @import "../../../styles.scss";
 
 header{
+  box-sizing: border-box;
   @include responsive-padding;
   display: flex;
   justify-content: space-between;
   padding: 20px 60px;
   align-items: center;
+  border: solid red;
+  width: 100%;
+  position: fixed;
+  background-color: #FFFCF3;
+  z-index: 3;
+  max-width: 1440px;
+
 }
 
 .burger-dialog{

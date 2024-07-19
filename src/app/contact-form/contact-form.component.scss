@@ -181,13 +181,20 @@ form {
     color: #383838;
     font-size: 16px;
   }
+
+  .privacy-policy{
+    color: #FF9900;
+    &:hover{
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
 }
 
 
 label {
   color: red;
 }
-
 // --------------------------- RESPONSIVNESS ---------------------------//
 
 

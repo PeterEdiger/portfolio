@@ -1,68 +1,103 @@
 @import "../../../styles.scss";
 
-footer{
+
+
+
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: black;
+  font-size: 50px;
   // border: solid green;
 }
 
-.footer-wrapper{
-  padding: 56px 0;
+.footer-wrapper {
+  padding: 1.1em 0;
   @include responsive-padding;
   background-color: black;
+  min-height: 100px;
 }
 
 .initials-copyright-container {
-  span{
+  span {
     font-family: "poppins";
-    font-size: 23px;
+    font-size: 0.5em;
     color: white;
   }
-  img{
-    width: 50px;
-    -webkit-filter: invert(100%); /* Safari/Chrome */
+
+  img {
+    width: 1em;
+    -webkit-filter: invert(100%);
+    /* Safari/Chrome */
     filter: invert(100%);
   }
 }
 
 .footer-icons-container {
-  position:relative;
+  position: relative;
   gap: 16px;
   // border: solid red;
   width: fit-content;
   justify-content: flex-end;
 
-  img{
-    width: 30px;
-    height: 30px;
+  img {
+    width: 0.6em;
+    height: 0.6em;
   }
 
-  .arrow-up-white{
-    width: 35px;
-    height: 52px;
-    position: absolute; 
+  .arrow-up-white {
+    width: 0.6em;
+    height: 1em;
+    position: absolute;
     right: 0;
-    top: -128px;
+    top: -2.5em;
   }
 }
 
-.legal-notice-container{
+.legal-notice-container {
   color: white;
   width: 100%;
   font-family: "overpass";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 0.9em;
   display: flex;
   justify-content: flex-end;
+
   // border: solid green;  
+  span {
+    &:hover {
+      color: #FF9900;
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
 }
 
 
 //-------------------- RESPONSIVNESS --------------------//
 
+//-------------------- 740px --------------------//
+@media(max-width: 740px) {
+
+  footer {
+    font-size: 40px;
+  }
+
+}
+
+//-------------------- 550px --------------------//
+@media(max-width: 550px) {
+  footer {
+    font-size: 30px;
+  }
+
+}
+
 //-------------------- 420px --------------------//
 @media(max-width: 420px) {
+  footer {
+    font-size: 28px;
+  }
 
 }
