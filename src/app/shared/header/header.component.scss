@@ -12,18 +12,18 @@ header {
   position: fixed;
   top: 0;
   background-color: #FFFCF3;
-  z-index: 3;
+  z-index: 5;
   max-width: 1440px;
 }
 
 
 .burger-dialog {
+  z-index: 6;
   font-size: 100px;
   border: solid orange 2px;
   background-color: #FFFCF3;
   position: fixed;
   height: 97vh;
-  z-index: 2;
   top: 90px;
   bottom: 0;
   right: 0;

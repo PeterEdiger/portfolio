@@ -1,13 +1,19 @@
 @import "../../styles.scss";
 //-------------------- Portfolio header --------------------//
 
-.header-container {
+.portfolio-header-container {
+  position: relative;
   @include responsive-padding;
   display: flex;
   justify-content: center;
   border: solid red;
 
-  .header-wrapper {
+  .portfolio-anchor{
+    position:absolute;
+    top: -150px;
+  }
+
+  .portfolio-header-wrapper {
     border: solid blue;
     display: flex;
     flex-direction: column;
@@ -123,7 +129,7 @@
 
 .grayscale {
   filter: grayscale(100%);
-  z-index: 10;
+  z-index: 4;
 }
 
 
