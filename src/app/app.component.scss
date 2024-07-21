@@ -1,7 +1,30 @@
 app-header{
-  // position:sticky;
   top: 0;
   right: 0;
   width: 100%;
 }
 
+.site-wrapper {
+  border: solid purple;
+  display: flex;
+  flex-direction: column;
+  // max-height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.min-height-100vh {
+  min-height: 100vh;
+}
+
+.max-height-100vh {
+  max-height: 100vh;
+}
+
+
+body{
+  height: 100%;
+  background-color: orange;
+}

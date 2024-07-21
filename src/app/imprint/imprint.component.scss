@@ -1,0 +1,27 @@
+.imprint-wrapper {
+  font-family: "syne";
+  font-size: 50px ;
+  height: 100vh;
+  box-sizing: border-box;
+  border: solid green;
+  padding-top: 100px;
+  // padding-left: 50px;
+  height: calc(100vh - 141px)  ;
+  span{
+    font-family: "overpass";
+  }
+}
+
+h1{
+  font-size: 1.1em;
+}
+
+h2{
+  font-size: 0.7em;
+}
+
+.imprint-wrapper{
+  span{
+    font-size: 0.5em;
+  }
+}

@@ -1,21 +1,29 @@
-
 @import "../../../styles.scss";
 
-header{
+header {
+  box-sizing: border-box;
   @include responsive-padding;
   display: flex;
   justify-content: space-between;
   padding: 20px 60px;
   align-items: center;
+  border: solid red;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #FFFCF3;
+  z-index: 5;
+  max-width: 1440px;
 }
 
-.burger-dialog{
-  // display: none;
-  border: solid orange;
+
+.burger-dialog {
+  z-index: 6;
+  font-size: 100px;
+  border: solid orange 2px;
   background-color: #FFFCF3;
   position: fixed;
-  height: 100%;
-  z-index: 2;
+  height: 97vh;
   top: 90px;
   bottom: 0;
   right: 0;
@@ -25,11 +33,40 @@ header{
   justify-content: center;
   align-items: center;
   overflow-y: hidden;
-  
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 
-.d-none{
+.burger-menu-hrefs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  border: solid purple;
+  width: max-content;
+  // margin-top: 10%;
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  h2 {
+    margin: 0;
+    margin-bottom: 0.5em;
+    position: relative;
+    font-family: "syne";
+    font-weight: 700;
+    font-size: 1em;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}
+
+.d-none {
   display: none;
 }
 
@@ -42,42 +79,60 @@ header{
   border-right: 150vw solid transparent;
 }
 
-.burger-links-container{
+.burger-links-container {
   margin-top: 10%;
   align-self: center;
   justify-self: center;
-  span{
-    position:relative;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 0.5em;
+    position: relative;
     font-family: "syne";
     font-weight: 700;
-    font-size: 96px;
-    &:hover{
-      cursor:pointer;
+    font-size: 1em;
+
+    &:hover {
+      cursor: pointer;
       opacity: 0.8;
     }
   }
 }
 
-.small-rectangle{
+.small-rectangle {
   position: absolute;
-  width: 39px;
-  height: 35px;
+  width: 0.4em;
+  height: 0.35em;
   bottom: 0;
-  left: -20px;;
+  left: -20px;
+  ;
   border-left: solid black;
   border-bottom: solid black;
 }
 
 //----------------- RESPONSIVNESS ---------------------//
 
-// @media(max-width: 750px){
-//   header{
-//     padding: 20px 40px;
-//   }
-// }
+@media(max-width: 1110px) {
+  .burger-dialog {
+    font-size: 80px;
+  }
+}
 
-// @media(max-width: 450px){
-//   header{
-//     padding: 20px 20px;
-//   }
-// }
+
+@media(max-width: 750px) {
+  .burger-dialog {
+    font-size: 70px;
+  }
+}
+
+@media(max-width: 550px) {
+  .burger-dialog {
+    font-size: 60px;
+  }
+}
+
+@media(max-width: 420px) {
+  .burger-dialog {
+    font-size: 45px;
+  }
+}

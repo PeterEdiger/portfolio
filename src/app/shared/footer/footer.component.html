@@ -1,17 +1,23 @@
 <div class="footer-wrapper">
-  
+
   <footer>
     <div class="initials-copyright-container d-flex column">
       <img src="./assets/img/footer/initials_logo.png" alt="">
-      <span>&#169; Peter Eidger 2024 </span>
+      <span>&#169; Peter Ediger 2024 </span>
     </div>
     <div class="footer-icons-container d-flex">
       <img src="./assets/img/footer/email-icon.png" alt="">
       <img src="./assets/img/footer/github-icon.png" alt="">
       <img src="./assets/img/footer/linkedin-icon.png" alt="">
-      <img class="arrow-up-white" src="./assets/img/footer/arrow-up-white.png" alt="">
+      <a href="#start">
+        <img class="arrow-up-white" src="./assets/img/footer/arrow-up-white.png" alt="">
+      </a>
+
     </div>
   </footer>
-  
-  <div class="legal-notice-container">legalnotice</div>
+
+  <div class="legal-notice-container">
+    <span [routerLink]="'/imprint'"> Imprint </span>
+  </div>
+
 </div>

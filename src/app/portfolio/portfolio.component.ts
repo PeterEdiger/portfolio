@@ -16,6 +16,9 @@ export class PortfolioComponent {
   angle: number = 0;
   rotate: string = "";
 
+  leftRightAnimation =  true
+  topAnimation = false
+
   
   rotateArrow(direction: number[]) {
         for (let i = 0; i < direction.length; i++) {
@@ -31,6 +34,7 @@ export class PortfolioComponent {
     this.angle = 0;
     this.rotate = "translate(50%, -50%) rotate(" + this.angle + "deg)";
   }
+
 
 
   portfolioProjects = [

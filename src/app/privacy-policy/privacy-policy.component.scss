@@ -1,0 +1,29 @@
+.privacy-policy-wrapper {
+  // overflow-y: scroll;
+  // height:fit-content;
+  font-family: "overpass";
+  h1, h2{
+    font-family: "syne";
+  }
+  // font-size: 50px ;
+  margin-top: 96px;
+  box-sizing: border-box;
+  border: solid rgb(21, 25, 21);
+  padding-left: 24px;
+  padding-right: 24px;
+  // height: calc(100vh - 141px)  ;
+}
+
+//----------------------------- RESPONSIVNESS -----------------------------//
+@media(max-width: 500px){
+  .privacy-policy-wrapper{
+    font-size: 16px;
+    h1{
+      font-size: 20px;
+    }
+    
+    h2{
+      font-size: 18px;
+    }
+  }
+}

@@ -1,20 +1,30 @@
 <header>
-  <img src="/assets/img/header/initials_logo.png" alt="">
-  <img (click)="burgerToggle()" src="/assets/img/header/burger_menu.png" alt="">
+  <a href="#start">
+    <img [routerLink] = "'/'" src="/assets/img/header/initials_logo.png" alt="">
+  </a>
+  <img  (click)="burgerToggle()" src="/assets/img/header/burger_menu.png" alt="">
 </header>
 
 <div class="burger-dialog " [ngClass]="{'d-none': visibility}">
-  <div class="burger-links-container d-flex column">
-    <span>About me
-      <div class="small-rectangle"></div>
-    </span>
-    <span>My Skills
-      <div class="small-rectangle"></div>
-    </span>
-    <span>Portfolio
-      <div class="small-rectangle"></div>
-    </span>
-    <!-- <img src="./assets/img/header/rectangle.png" alt=""> -->
+  <div class="burger-menu-hrefs d-flex column">
+    <a (click)="burgerToggle()" href="#about-me" >
+      <h2>About me
+        <div class="small-rectangle"></div>
+      </h2>
+    </a>
+
+    <a (click)="burgerToggle()" href="#my-skills">
+      <h2>My Skills
+        <div class="small-rectangle"></div>
+      </h2>
+    </a>
+    
+    <a (click)="burgerToggle()" href="#portfolio">
+      <h2>Portfolio
+        <div class="small-rectangle"></div>
+      </h2>
+    </a>
+        <!-- <img src="./assets/img/header/rectangle.png" alt=""> -->
   </div>
   <div class="triangle-topleft">
 

@@ -1,13 +1,19 @@
 @import "../../styles.scss";
 //-------------------- Portfolio header --------------------//
 
-.header-container {
+.portfolio-header-container {
+  position: relative;
   @include responsive-padding;
   display: flex;
   justify-content: center;
   border: solid red;
 
-  .header-wrapper {
+  .portfolio-anchor{
+    position:absolute;
+    top: -150px;
+  }
+
+  .portfolio-header-wrapper {
     border: solid blue;
     display: flex;
     flex-direction: column;
@@ -35,23 +41,22 @@
   @include responsive-padding;
   border: solid red;
   position: relative;
-  margin: 140px 0;
-
+  margin-top: 140px;
 
   .chronologic-number {
     position: absolute;
     top: 0;
     right: 150px;
-    // justify-self: flex-end;
     font-family: "syne";
     font-size: 48px;
   }
+
+  .chronologic-number-even {
+    left: 150px;
+    width: fit-content
+  }
 }
 
-
-.chronologic-number-even{
-  left: 150px;
-}
 
 .portfolio-img-wrapper {
   position: relative;
@@ -65,14 +70,21 @@
 
 .project-flex-container {
   display: flex;
-  min-width: 100%;
-  
+  width: 100%;
+  align-items: center;
+
   gap: 80px;
   border: solid blue;
 
   &:hover {
-    .join-description {
+    .project-description {
       display: flex;
+      animation: left-to-right 1s forwards;
+    }
+
+    .project-description-even {
+      display: flex;
+      animation: right-to-left 1s forwards;
     }
   }
 
@@ -95,7 +107,6 @@
   border: solid black 2px;
   width: 100%;
   height: 100%;
-  // display: none;
 
   .down-arrow {
     width: 75px;
@@ -115,46 +126,52 @@
   }
 }
 
+
 .grayscale {
   filter: grayscale(100%);
-  z-index: 10;
+  z-index: 4;
 }
 
 
-.join-description {
-  padding-top: 60px;
+.project-description,
+.project-description-even {
+  border: solid blue;
   display: none;
   flex-direction: column;
+  font-size: 45px;
+  gap: 10px;
 
   h2 {
     margin: 0;
     font-family: "syne";
     font-weight: 800;
-    font-size: 45px;
+    font-size: 1em;
+    // padding-bottom: 8px;
   }
 
   .technologies {
     font-family: "overpass";
-    font-size: 23px;
+    font-size: 0.5em;
     color: #FF9900;
-    padding-bottom: 8px;
+    // padding-bottom: 8px;
   }
 
   .description {
     font-family: "overpass";
-    font-size: 16px;
+    font-size: 0.35em;
     padding-bottom: 16px;
   }
 }
 
 
 .description-btns {
+  border: solid orange;
   display: flex;
   gap: 40px;
 
   div {
     font-family: "overpass";
-    font-size: 23px;
+    font-size: 0.5em;
   }
 
   .test-btn,
@@ -178,8 +195,8 @@
     font-weight: 800;
     cursor: pointer;
   }
-
 }
+
 
 //-------------------- ANIMATIONS --------------------//
 @keyframes left-to-right {
@@ -193,7 +210,7 @@
 }
 
 
-@keyframes from-right-to-left {
+@keyframes right-to-left {
   from {
     transform: translateX(50%);
   }
@@ -202,6 +219,18 @@
     transform: translateX(0%);
   }
 }
+
+@keyframes top-to-bottom {
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+
 
 .slide-in-right-to-left {
   animation-name: from-right-to-left;
@@ -215,6 +244,13 @@
   animation-timing-function: ease-out;
 }
 
+.slide-in-top-to-bottom {
+  display: none;
+  animation-name: top-to-bottom;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+}
+
 //-------------------- Flexible Classes --------------------//
 .flex-d-row-reverse {
   flex-direction: row-reverse;
@@ -223,12 +259,184 @@
 
 //-------------------- RESPONSIVNESS --------------------//
 
+
+//-------------------- 1110px --------------------//
+@media(max-width: 1110px) {
+  .project-flex-container {
+    flex-direction: column;
+    width: fit-content;
+    gap: 32px;
+    align-items: flex-start;
+  }
+
+  .portfolio-project-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 540px;
+
+    .chronologic-number {
+      top: -50px;
+      right: 24px;
+      font-size: calc(48px * 0.7);
+    }
+
+    .chronologic-number-even {
+      left: 24px;
+      font-size: calc(48px * 0.7);
+
+    }
+  }
+
+
+  .project-flex-container:hover .project-description {
+    display: flex;
+  }
+
+  .project-flex-container:hover .project-description {
+    animation: top-to-bottom 1s forwards;
+  }
+
+  .project-flex-container:hover .project-description-even {
+    animation: top-to-bottom 1s forwards;
+  }
+}
+
+
+//-------------------- 740px --------------------//
+@media(max-width: 740px) {
+  .portfolio-project-wrapper {
+    height: 450px;
+  }
+
+  .portfolio-img-wrapper {
+    img {
+      width: 450px;
+    }
+  }
+
+  .project-flex-container{
+    max-width: 450px;
+  }
+
+  // font-size em basis for all children 
+  .project-description,
+  .project-description-even {
+    font-size: 31.5px;
+
+    .description{
+      font-size: 0.5em;
+      font-weight: 500;
+    }
+  }
+
+  .description-btns {
+    gap: 24px;
+
+    .test-btn,
+    .git-btn {
+      width: 100px;
+      height: 35px;
+      border: solid 2px;
+    }
+  }
+
+  .portfolio-img-border {
+    top: 4px;
+    left: 4px;
+
+    .down-arrow {
+      width: 50px;
+    }
+
+    .down-arrow-reverse {
+      width: 50px;
+      left: -11%;
+    }
+  }
+}
+
+
+//-------------------- 550px --------------------//
+@media(max-width: 550px) {
+
+  .portfolio-project-wrapper {
+    height: 315px;
+  }
+
+  .portfolio-img-wrapper {
+    img {
+      width: 300px;
+    }
+  }
+
+  .project-flex-container{
+    max-width: 300px;
+  }
+
+  .portfolio-project-wrapper{
+    .chronologic-number {
+      top: -40px;
+      right: 24px;
+      font-size: calc(48px * 0.7 * 0.7);
+    }
+  
+    .chronologic-number-even {
+      left: 24px;
+      font-size: calc(48px * 0.7 * 0.7);
+    }
+  }
+
+
+  .project-description,
+  .project-description-even {
+    font-size: 22px;
+
+    .technologies{
+      font-size: 0.7em;
+    }
+    .description{
+      font-size: 0.6em;
+      font-weight: 500;
+    }
+  }
+
+  .description-btns {
+
+    .test-btn,
+    .git-btn {
+      width: calc(140px * 0.7);
+      height: calc(50px * 0.7);
+    }
+  }
+
+  .portfolio-img-border {
+    top: 4px;
+    left: 4px;
+
+    .down-arrow,
+    .down-arrow-reverse {
+      width: 35px;
+    }
+  }
+}
+
+//-------------------- 420px --------------------//
 @media(max-width: 420px) {
-  .header-container{
+  .header-container {
     .header-wrapper {
       h2 {
         font-size: 56px;
       }
     }
   }
+}
+
+
+@media(max-width: 370px){
+  .portfolio-img-wrapper {
+    img {
+      width: 280px;
+    }
+  }
+ 
 }
