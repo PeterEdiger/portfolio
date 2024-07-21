@@ -5,7 +5,7 @@ import { provideHttpClient } from '@angular/common/http';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
-import { HttpLoaderFactory } from './app.translate.service'; 
+import { HttpLoaderFactory } from './app.translate.loader.factory'; 
 
 
 export const appConfig: ApplicationConfig = {
@@ -22,3 +22,6 @@ export const appConfig: ApplicationConfig = {
     }).providers!
   ]
 };
+
+
+

@@ -19,17 +19,16 @@ export class HeaderComponent {
 
   constructor(private translate: TranslateService){
     this.translate.setDefaultLang("en");
-    this.translate.addLangs(["en", "de"])
-    this.translate.use("en")
   }
+
+  
+  visibility = true;
 
 
   switchLanguage(language: string){
     this.translate.use(language)
   }
 
-
-  visibility = true;
 
   burgerToggle() {
     if (this.visibility) {
