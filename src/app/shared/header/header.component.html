@@ -2,7 +2,11 @@
   <a href="#start">
     <img [routerLink] = "'/'" src="/assets/img/header/initials_logo.png" alt="">
   </a>
-  <img  (click)="burgerToggle()" src="/assets/img/header/burger_menu.png" alt="">
+  <div class="burger-and-translation-btns d-flex center-all">
+    <span>DE</span>
+    <span>EN</span>
+    <img  (click)="burgerToggle()" src="/assets/img/header/burger_menu.png" alt="">
+  </div>
 </header>
 
 <div class="burger-dialog " [ngClass]="{'d-none': visibility}">

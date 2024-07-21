@@ -16,6 +16,12 @@ header {
   max-width: 1440px;
 }
 
+.burger-and-translation-btns{
+  gap: 16px;
+  font-family: "overpass";
+  font-size: 24px;
+  font-weight: 600ew;
+}
 
 .burger-dialog {
   z-index: 6;
