@@ -4,6 +4,7 @@ import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { filter } from 'rxjs/operators';
 
 
 @Component({
@@ -27,10 +28,16 @@ export class AppComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        this.isImprintRoute = event.urlAfterRedirects === '/imprint';
-      }
-    });
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(event => {
+        this.isImprintRoute = (event as NavigationEnd).urlAfterRedirects === '/imprint';
+        
+        // Überprüfe, ob die URL ein Anker-Tag enthält
+        const navigationEndEvent = event as NavigationEnd;
+        if (!navigationEndEvent.urlAfterRedirects.includes('#')) {
+          window.scrollTo(0, 0);
+        }
+      });
   }
 }
