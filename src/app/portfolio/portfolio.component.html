@@ -2,7 +2,7 @@
   <div class="portfolio-anchor" id="portfolio"></div>
   <div class="portfolio-header-wrapper">
     <h2>Portfolio
-      <p>Explore a selection of my work here - interact with projects to see my skill in action</p>
+      <p> {{"PORTFOLIO.CONTENT" | translate}} </p>
     </h2>
   </div>
 </div>
@@ -10,21 +10,17 @@
 
 <!----------------------------------- FIRST PROJECT ----------------------------------->
 <div class="portfolio-project-wrapper">
-  <div class="project-flex-container"
-  (mouseenter)="rotateArrow(rotationAngles)" 
-  (mouseleave)="invisible()" 
-   >
-   <div class="portfolio-img-wrapper" >
-      <img class="grayscale"  src= {{portfolioProjects[0].imgPath}}  alt="">
+  <div class="project-flex-container" (mouseenter)="rotateArrow(rotationAngles)" (mouseleave)="invisible()">
+    <div class="portfolio-img-wrapper">
+      <img class="grayscale" src={{portfolioProjects[0].imgPath}} alt="">
       <div class="portfolio-img-border">
-        <img [ngStyle]="{'transform': rotate}"
-        class="down-arrow" src="./assets/img/portfolio/arrow-down.png" alt="">
+        <img [ngStyle]="{'transform': rotate}" class="down-arrow" src="./assets/img/portfolio/arrow-down.png" alt="">
       </div>
     </div>
     <div class="project-description">
       <h2>{{portfolioProjects[0].projectName}}</h2>
       <span class="technologies"> {{portfolioProjects[0].technologies}} </span>
-      <span class="description"> {{portfolioProjects[0].text}} </span>
+      <span class="description"> {{"PORTFOLIO.JOIN-TEXT" | translate}} </span>
       <div class="description-btns">
         <div class="test-btn">Test</div>
         <div class="git-btn">Git</div>
@@ -37,21 +33,19 @@
 
 <!----------------------------------- SECOND PROJECT ----------------------------------->
 <div class="portfolio-project-wrapper">
-  <div class="project-flex-container flex-d-row-reverse"
-   (mouseenter)="rotateArrow(rotationAnglesReverse)" 
-   (mouseleave)="invisible()" 
-   >
-    <div class="portfolio-img-wrapper" >
-      <img class="grayscale"  src={{portfolioProjects[1].imgPath}} alt="">
+  <div class="project-flex-container flex-d-row-reverse" (mouseenter)="rotateArrow(rotationAnglesReverse)"
+    (mouseleave)="invisible()">
+    <div class="portfolio-img-wrapper">
+      <img class="grayscale" src={{portfolioProjects[1].imgPath}} alt="">
       <div class="portfolio-img-border">
-        <img [ngStyle]="{'transform': rotate}"
-               class="down-arrow-reverse" src="./assets/img/portfolio/arrow-down.png" alt="">
+        <img [ngStyle]="{'transform': rotate}" class="down-arrow-reverse" src="./assets/img/portfolio/arrow-down.png"
+          alt="">
       </div>
     </div>
     <div class="project-description-even">
       <h2>{{portfolioProjects[1].projectName}}</h2>
       <span class="technologies"> {{portfolioProjects[1].technologies}} </span>
-      <span class="description"> {{portfolioProjects[1].text}} </span>
+      <span class="description">{{"PORTFOLIO.LOCO-TEXT" | translate}}</span>
       <div class="description-btns">
         <div class="test-btn">Test</div>
         <div class="git-btn">Git</div>
@@ -63,5 +57,3 @@
 
 
 <!-- <app-portfolio-project [projects] = portfolioProjects></app-portfolio-project> -->
-
-

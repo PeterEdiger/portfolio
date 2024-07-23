@@ -8,8 +8,8 @@
   justify-content: center;
   border: solid red;
 
-  .portfolio-anchor{
-    position:absolute;
+  .portfolio-anchor {
+    position: absolute;
     top: -150px;
   }
 
@@ -18,11 +18,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 50px;
 
     h2 {
       margin: 0;
       font-family: "syne";
-      font-size: 78px;
+      font-size: 1.25em;
       text-align: center;
     }
 
@@ -30,7 +31,7 @@
       width: fit-content;
       // min-width: 100%;
       font-family: "overpass";
-      font-size: 23px;
+      font-size: 0.5em;
       text-align: left;
     }
   }
@@ -122,7 +123,6 @@
     top: 50%;
     left: -12.5%;
     transform: translate(-50%, -50%);
-
   }
 }
 
@@ -301,9 +301,15 @@
   }
 }
 
-
 //-------------------- 740px --------------------//
 @media(max-width: 740px) {
+
+  .portfolio-header-container {
+    .portfolio-header-wrapper {
+      font-size: 35px;
+    }
+  }
+
   .portfolio-project-wrapper {
     height: 450px;
   }
@@ -314,7 +320,7 @@
     }
   }
 
-  .project-flex-container{
+  .project-flex-container {
     max-width: 450px;
   }
 
@@ -323,7 +329,7 @@
   .project-description-even {
     font-size: 31.5px;
 
-    .description{
+    .description {
       font-size: 0.5em;
       font-weight: 500;
     }
@@ -359,6 +365,13 @@
 //-------------------- 550px --------------------//
 @media(max-width: 550px) {
 
+  .portfolio-header-container {
+    .portfolio-header-wrapper {
+      font-size: 30px;
+    }
+  }
+
+
   .portfolio-project-wrapper {
     height: 315px;
   }
@@ -369,17 +382,17 @@
     }
   }
 
-  .project-flex-container{
+  .project-flex-container {
     max-width: 300px;
   }
 
-  .portfolio-project-wrapper{
+  .portfolio-project-wrapper {
     .chronologic-number {
       top: -40px;
       right: 24px;
       font-size: calc(48px * 0.7 * 0.7);
     }
-  
+
     .chronologic-number-even {
       left: 24px;
       font-size: calc(48px * 0.7 * 0.7);
@@ -391,10 +404,11 @@
   .project-description-even {
     font-size: 22px;
 
-    .technologies{
+    .technologies {
       font-size: 0.7em;
     }
-    .description{
+
+    .description {
       font-size: 0.6em;
       font-weight: 500;
     }
@@ -431,12 +445,19 @@
   }
 }
 
+.portfolio-header-container {
+  .portfolio-header-wrapper {
+    font-size: 25px;
+  }
+}
 
-@media(max-width: 370px){
+
+
+@media(max-width: 370px) {
   .portfolio-img-wrapper {
     img {
       width: 280px;
     }
   }
- 
+
 }

@@ -2,17 +2,24 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, RouterLink, RouterOutlet],
+  imports: [
+    FormsModule,
+    ReactiveFormsModule,
+    RouterLink,
+    RouterOutlet,
+    TranslateModule
+  ],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
 
-  http = inject(HttpClient)
+  http = inject(HttpClient);
 
   contactData = {
     name: "",
@@ -36,9 +43,9 @@ export class ContactFormComponent {
 
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      
+
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
-      .subscribe({
+        .subscribe({
           next: (response) => {
 
             ngForm.resetForm();
@@ -48,7 +55,7 @@ export class ContactFormComponent {
           },
           complete: () => console.info('send post complete'),
         });
-      } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
     }
   }

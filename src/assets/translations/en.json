@@ -1,3 +1,42 @@
 {
-  "about-me-header": "About me"
+  "ABOUT-ME": {
+    "HEADER": "About me",
+    "CONTENT": "As a frontend developer based in Hamburg, Germany, I help designers and companies bring their ideas to life. I am very passionate about turning new ideas or concepts from templates into technically sound and functional websites.",
+    "CALL-TO-ACTION": "If you think I would be a good fit for your project, please contact me.",
+    "LET-US-TALK": "Let's talk"
+  },
+
+  "PORTFOLIO": {
+    "CONTENT": "Explore a selection of my work here - interact with projects to see my skill in action",
+    "JOIN-TEXT": "Task manager inspired by the Kanban System",
+    "LOCO-TEXT": "Jump and Run. Based on Object Oriented Programming"
+  },
+
+  "CONTACT": {
+    "DISCUSS-PROJECT": "Want to discuss a new project?", 
+    "DO-IT": "Let's discuss your ideas and make it happen!"
+  },
+
+  "FORM": {
+    "PLACEHOLDER": {
+      "NAME": "Your Name",
+      "MAIL": "Your Email",
+      "MESSAGE": "Your Message"
+    }
+  },
+
+  "WARNING": {
+    "NAME": "Please enter a name",
+    "MAIL": "Please enter a valid email",
+    "MESSAGE": "Please enter a message"
+  }, 
+
+  "PRIVACY-POLICY": {
+    "PART-A": "I've read the",
+    "PART-B": "privacy policy",
+    "PART-C": "and agree to the processing of my data as outlined"
+  },
+
+  "SEND-MESSAGE": "Send message"
+
 }

@@ -9,8 +9,8 @@
     <img src="./assets/img/contact-form/say-hi.png" alt="">
   </div>
 
-  <div class="discuss-new-project d-flex-j-c">Want to discuss a new project?</div>
-  <div class="say-hello d-flex-j-c">Let's discuss your ideas and make it happen!</div>
+  <div class="discuss-new-project d-flex-j-c"> {{"CONTACT.DISCUSS-PROJECT" | translate}} </div>
+  <div class="say-hello d-flex-j-c"> {{"CONTACT.DO-IT" | translate}} </div>
 
 
   <div class="form-wrapper d-flex-j-c">
@@ -18,23 +18,23 @@
     <form class="d-flex column" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
       
       <div class="name-input-wrapper">
-        <input #name="ngModel" [(ngModel)]= "contactData.name" type="text" id="name" name="name" placeholder="Your Name" autocomplete="off" required> 
+        <input #name="ngModel" [(ngModel)]= "contactData.name" type="text" id="name" name="name" [placeholder]= "'FORM.PLACEHOLDER.NAME' | translate" autocomplete="off" required> 
         @if(!name.valid && message.touched){
-          <span class="enter-message">Please enter a name</span>
+          <span class="enter-message"> {{"WARNING.NAME" | translate}} </span>
         }
       </div>
 
       <div class="email-input-wrapper">
-        <input #email="ngModel" [(ngModel)]= "contactData.email" type="email" id="email" name="email" placeholder="Your Email" autocomplete="off" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"> 
+        <input #email="ngModel" [(ngModel)]= "contactData.email" type="email" id="email" name="email" [placeholder]= "'FORM.PLACEHOLDER.MAIL' | translate" autocomplete="off" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"> 
         @if(!email.valid && message.touched){
-          <span class="enter-message">Please enter a valid email</span>
+          <span class="enter-message"> {{"WARNING.MAIL" | translate}} </span>
         }
       </div>
       
       <div class="textarea-wrapper">
-        <textarea #message = "ngModel" minlength="4" [(ngModel)]= "contactData.message" name="message" id="message" placeholder="Your Message" required></textarea>
+        <textarea #message = "ngModel" minlength="4" [(ngModel)]= "contactData.message" name="message" id="message" [placeholder]= "'FORM.PLACEHOLDER.MESSAGE' | translate" required></textarea>
         @if(!message.valid && message.touched){
-          <span class="enter-message">Please enter a message</span>
+          <span class="enter-message"> {{"WARNING.MESSAGE" | translate}} </span>
         }
       </div>
 
@@ -42,11 +42,11 @@
         <div>
           <input type="checkbox" id="consent" name="consent" required>
         </div>
-        <label id="terms">I've read the <span class="privacy-policy" [routerLink]="'/privacy-policy'">privacy policy</span> and agree to the processing of my data as outlined</label>
+        <label id="terms">  {{"PRIVACY-POLICY.PART-A" |translate}}  <span class="privacy-policy" [routerLink]="'/privacy-policy'">  {{"PRIVACY-POLICY.PART-B" | translate}} </span> {{"PRIVACY-POLICY.PART-C" |translate}} </label>
       </div>
 
       <button class="submit-btn d-flex center-all">
-        <span>Send message</span>
+        <span> {{"SEND-MESSAGE" | translate}} </span>
       </button>
 
     </form>

@@ -1,3 +1,41 @@
 {
-  "about-me-header": "Über mich"
+  "ABOUT-ME" : {
+    "HEADER": "Über mich",
+    "CONTENT": "Als Frontend-Entwickler mit Sitz in Hamburg, Deutschland, helfe ich Designern und Unternehmen, ihre Ideen in die Realität umzusetzen. Sehr gerne verwirkliche ich neue Ideen oder Ideen aus Vorlagen in technisch saubere und funktionale Websites. ",
+    "CALL-TO-ACTION": "Falls Sie glauben, dass ich gut zu Ihrem Projekt passe, kontaktieren Sie mich bitte.",
+    "LET-US-TALK": "Kontakt"
+  },
+
+  "PORTFOLIO": {
+    "CONTENT" : "Testen Sie meine Projekte und schauen Sie sich gerne den Code auf GitHub an.",
+    "JOIN-TEXT" : "Organisieren Sie Aufgaben im Stil des Kanban-Systems.",
+    "LOCO-TEXT" : "Jump and Run. Basierend auf objektorientierter Programmierung."
+  }, 
+
+  "CONTACT": {
+    "DISCUSS-PROJECT":"Sie möchten ein Projekt verwirklichen?",
+    "DO-IT": "Lassen Sie uns sprechen!"
+    }, 
+
+  "FORM": {
+    "PLACEHOLDER": {
+      "NAME": "Ihr Name",
+      "MAIL": "Ihre Email",
+      "MESSAGE": "Ihre Nachricht"
+    }
+  },
+
+  "WARNING": {
+    "NAME": "Ihr Name ist erforderlich.",
+    "MAIL": "Ihre Email ist erforderlich.",
+    "MESSAGE": "Ihre Nachricht ist leer."
+  },
+
+  "PRIVACY-POLICY": {
+    "PART-A": "Ich habe die",
+    "PART-B": "Datenschutzerklärung",
+    "PART-C": "gelesen und bin mit der beschriebenen Verarbeitung meiner Daten einverstanden."
+  },
+
+  "SEND-MESSAGE": "Senden"
 }
