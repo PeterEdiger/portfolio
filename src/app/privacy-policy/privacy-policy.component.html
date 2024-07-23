@@ -1,55 +1,33 @@
 <div class="privacy-policy-wrapper">
-  <h1>Datenschutzerklärung</h1>
-  <p>In dieser Datenschutzerklärung informieren wir Sie über die Verarbeitung personenbezogener Daten bei der Nutzung
-    dieser Website.</p>
-  <h2>Verantwortlicher</h2>
-  <p>Verantwortlich für die Datenverarbeitung ist:<br><em>Name, Adresse, Telefonnummer und E-Mail-Adresse des
-      Websitebetreibers ergänzen</em></p>
-  
-  <h2>Personenbezogene Daten</h2>
-  <p>Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche
-    Person (betroffene Person) beziehen. Als identifizierbar wird eine natürliche Person angesehen, die direkt oder
-    indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu
-    einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der
-    physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser
-    natürlichen Person sind.</p>
-  <h2>Daten beim Websiteaufruf</h2>
-  <p>Wenn Sie diese Website nur nutzen, um sich zu informieren und keine Daten angeben, dann verarbeiten wir nur die
-    Daten, die zur Anzeige der Website auf dem von Ihnen verwendeten internetfähigen Gerät erforderlich sind. Das sind
-    insbesondere:</p>
+  <h1>{{ "PRIVACY_POLICY_TITLE" | translate }}</h1>
+  <p>{{ 'PRIVACY_POLICY_INTRO' | translate }}</p>
+  <h2>{{ 'RESPONSIBLE_TITLE' | translate }}</h2>
+  <p [innerHTML]="'RESPONSIBLE_INFO' | translate"></p>
+  <h2>{{ 'PERSONAL_DATA_TITLE' | translate }}</h2>
+  <p>{{ 'PERSONAL_DATA_INFO' | translate }}</p>
+  <h2>{{ 'DATA_ON_WEBSITE_CALL_TITLE' | translate }}</h2>
+  <p>{{ 'DATA_ON_WEBSITE_CALL_INFO' | translate }}</p>
   <ul>
-    <li>IP-Adresse</li>
-    <li>Datum und Uhrzeit der Anfrage</li>
-    <li>jeweils übertragene Datenmenge</li>
-    <li>die Website, von der die Anforderung kommt</li>
-    <li>Browsertyp und Browserversion</li>
-    <li>Betriebssystem</li>
+    <li>{{ 'DATA_ON_WEBSITE_CALL_LIST.IP_ADDRESS' | translate }}</li>
+    <li>{{ 'DATA_ON_WEBSITE_CALL_LIST.REQUEST_DATE_TIME' | translate }}</li>
+    <li>{{ 'DATA_ON_WEBSITE_CALL_LIST.TRANSFERRED_DATA_AMOUNT' | translate }}</li>
+    <li>{{ 'DATA_ON_WEBSITE_CALL_LIST.REFERRER_WEBSITE' | translate }}</li>
+    <li>{{ 'DATA_ON_WEBSITE_CALL_LIST.BROWSER_TYPE_VERSION' | translate }}</li>
+    <li>{{ 'DATA_ON_WEBSITE_CALL_LIST.OPERATING_SYSTEM' | translate }}</li>
   </ul>
-  <p>Rechtsgrundlage für die Verarbeitung dieser Daten sind berechtigte Interessen gemäß Art. 6 Abs. 1 lit. f) DSGVO, um
-    die Darstellung der Website grundsätzlich zu ermöglichen.</p>
-  <p>Darüber hinaus können Sie verschiedene Leistungen auf der Website nutzen, bei der weitere personenbezogene und
-    nicht personenbezogene Daten verarbeitet werden.</p>
-  <h2>Ihre Rechte</h2>
-  <p>Als betroffene Person haben Sie folgende Rechte:</p>
+  <p>{{ 'LEGAL_BASIS_INFO' | translate }}</p>
+  <p>{{ 'ADDITIONAL_SERVICES_INFO' | translate }}</p>
+  <h2>{{ 'YOUR_RIGHTS_TITLE' | translate }}</h2>
+  <p>{{ 'YOUR_RIGHTS_INFO' | translate }}</p>
   <ul>
-    <li>Sie haben ein Auskunftsrecht bezüglich der Sie betreffenden personenbezogenen Daten, die der Verantwortliche
-      verarbeitet (Art. 15 DSGVO),</li>
-    <li>Sie haben das Recht auf Berichtigung der Sie betreffenden Daten, wenn diese unrichtig oder unvollständig
-      gespeichert werden (Art. 16 DSGVO),</li>
-    <li>Sie haben das Recht auf Löschung (Art. 17 DSGVO),</li>
-    <li>Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen (Art. 18
-      DSGVO),</li>
-    <li>Sie haben das Recht auf Datenübertragbarkeit (Art. 20 DSGVO),</li>
-    <li>Sie haben ein Widerspruchsrecht gegen die Verarbeitung der Sie betreffenden personenbezogenen Daten (Art. 21
-      DSGVO),</li>
-    <li>Sie haben das Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung – einschließlich
-      Profiling – beruhenden Entscheidung unterworfen zu werden, die Ihnen gegenüber rechtliche Wirkung entfaltet oder
-      Sie in ähnlicher Weise erheblich beeinträchtigt (Art. 22 DSGVO),</li>
-    <li>Sie haben das Recht, sich bei einem vermuteten Verstoß gegen das Datenschutzrecht bei der zuständigen
-      Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Zuständig ist die Aufsichtsbehörde an Ihrem üblichen
-      Aufenthaltsort, Arbeitsplatz oder am Ort des vermuteten Verstoßes.</li>
+    <li>{{ 'YOUR_RIGHTS_LIST.ACCESS_RIGHT' | translate }}</li>
+    <li>{{ 'YOUR_RIGHTS_LIST.RECTIFICATION_RIGHT' | translate }}</li>
+    <li>{{ 'YOUR_RIGHTS_LIST.ERASURE_RIGHT' | translate }}</li>
+    <li>{{ 'YOUR_RIGHTS_LIST.RESTRICTION_RIGHT' | translate }}</li>
+    <li>{{ 'YOUR_RIGHTS_LIST.DATA_PORTABILITY_RIGHT' | translate }}</li>
+    <li>{{ 'YOUR_RIGHTS_LIST.OBJECTION_RIGHT' | translate }}</li>
+    <li>{{ 'YOUR_RIGHTS_LIST.AUTOMATED_DECISION_RIGHT' | translate }}</li>
+    <li>{{ 'YOUR_RIGHTS_LIST.COMPLAINT_RIGHT' | translate }}</li>
   </ul>
-  <p>Quelle: <a href="https://www.anwalt.de/vorlage/muster-datenschutzerklaerung.php"
-      rel="nofollow">Muster-Datenschutzerklärung von anwalt.de</a></p>
-
+  <p>{{ 'SOURCE' | translate }}: <a href="https://www.anwalt.de/vorlage/muster-datenschutzerklaerung.php" rel="nofollow">{{ 'SOURCE_LINK' | translate }}</a></p>
 </div>
