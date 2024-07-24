@@ -1,17 +1,27 @@
 <header>
   <a href="#start">
-    <img [routerLink] = "'/'" src="/assets/img/header/initials_logo.png" alt="">
+    <img [routerLink]="'/'" src="/assets/img/header/initials_logo.png" alt="">
   </a>
   <div class="burger-and-translation-btns d-flex center-all">
-    <span (click)="switchLanguage('de')" >DE</span>
+    <span (click)="switchLanguage('de')">DE</span>
     <span (click)="switchLanguage('en')">EN</span>
-    <img  (click)="burgerToggle()" src="/assets/img/header/burger_menu.png" alt="">
+    <span>
+      <input (click)="burgerToggle()" type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
+      <label for="checkbox3">
+        <div class="hamburger hamburger3">
+          <span class="bar bar1"></span>
+          <span class="bar bar2"></span>
+          <span class="bar bar3"></span>
+          <span class="bar bar4"></span>
+        </div>
+      </label>
+    </span>
   </div>
 </header>
 
 <div class="burger-dialog " [ngClass]="{'d-none': visibility}">
   <div class="burger-menu-hrefs d-flex column">
-    <a (click)="burgerToggle()" href="#about-me" >
+    <a (click)="burgerToggle()" href="#about-me">
       <h2>About me
         <div class="small-rectangle"></div>
       </h2>
@@ -22,13 +32,13 @@
         <div class="small-rectangle"></div>
       </h2>
     </a>
-    
+
     <a (click)="burgerToggle()" href="#portfolio">
       <h2>Portfolio
         <div class="small-rectangle"></div>
       </h2>
     </a>
-        <!-- <img src="./assets/img/header/rectangle.png" alt=""> -->
+    <!-- <img src="./assets/img/header/rectangle.png" alt=""> -->
   </div>
   <div class="triangle-topleft">
 
