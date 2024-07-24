@@ -24,12 +24,20 @@ export class HeaderComponent {
   
   visibility = true;
 
-
+/**
+ * Switches the application language using the translation service.
+ * @param {string} language - The language code to switch to (e.g., 'en' for English, 'fr' for French).
+ */
   switchLanguage(language: string){
     this.translate.use(language)
   }
 
 
+  
+/**
+ * Toggles the visibility of a menu and updates the document's overflow style accordingly.
+ * When the menu is visible, it disables scrolling on the body. When hidden, it re-enables scrolling.
+ */
   burgerToggle() {
     if (this.visibility) {
       document.body.style.overflow = 'hidden';

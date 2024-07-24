@@ -4,7 +4,6 @@
   position: relative;
   @include responsive-padding;
   padding: 0 60px;
-  border: solid green;
   margin-top: 72px;
 }
 
@@ -34,7 +33,6 @@
 }
 
 .skills-icons-wrapper {
-  // border: solid brown;
   height: 100%;
   display: flex;
   align-items: center;
@@ -70,7 +68,6 @@
   .my-skills{
     font-size: 30px;
   }
-
   .icons-holder{
     img{
       width: 50px;
@@ -86,11 +83,9 @@
   .right-arrow{
     width: 200px;
   }
-
 }
 
 @media (max-width: 520px) {
-
   .my-skills{
     font-size: 16px;
     padding: 0 5px;

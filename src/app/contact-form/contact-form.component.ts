@@ -41,6 +41,8 @@ export class ContactFormComponent {
     },
   };
 
+
+  
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
 

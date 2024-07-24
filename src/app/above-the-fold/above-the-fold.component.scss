@@ -5,13 +5,11 @@
   height: 84vh;
   margin: 0;
   width: 100%;
-  border: solid blue;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 
 .frontend-dev-wrapper {
   margin-top: 100px;
@@ -25,7 +23,6 @@ p {
   margin-top: 72px;
   display: flex;
   justify-content: center;
-  border: solid green;
   img{
     width: 50%
   }
@@ -35,14 +32,12 @@ p {
   display: flex;
   justify-content: center;
   padding-top: 18px;
-  // border: solid blue;
   img{
     width: 60%
   }
 }
 
 .stroke-and-name {
-  // border: solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +59,6 @@ p {
 
 .scroll-down {
   @include responsive-padding;
-  // border: solid blue;
   display: flex;
   padding: 0 70px 0 60px;
   justify-content: space-between;
@@ -72,7 +66,6 @@ p {
   .email {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    // text-orientation: upright;
     align-self: flex-end;
     font-family: "overpass";
     font-size: 23px;
@@ -93,7 +86,6 @@ p {
 
   .arrow {
     img {
-      border: solid red;
       width: 100px;
       height: 200px;
     }
@@ -118,13 +110,11 @@ p {
 
     .arrow {
       img {
-        border: solid blue;
         width: 50px;
         height: 100px;
       }
   }
 }
-
 }
 
 @media(max-width: 450px){
@@ -136,6 +126,4 @@ p {
       height: 1.5px
     }
   }
-  
-  
 }

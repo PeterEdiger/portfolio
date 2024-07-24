@@ -6,7 +6,6 @@
   @include responsive-padding;
   display: flex;
   justify-content: center;
-  border: solid red;
 
   .portfolio-anchor {
     position: absolute;
@@ -14,33 +13,28 @@
   }
 
   .portfolio-header-wrapper {
-    border: solid blue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 50px;
 
     h2 {
       margin: 0;
       font-family: "syne";
-      font-size: 1.25em;
+      font-size: 78px;
       text-align: center;
     }
 
     p {
       width: fit-content;
-      // min-width: 100%;
       font-family: "overpass";
-      font-size: 0.5em;
+      font-size: 23px;
       text-align: left;
     }
   }
 }
 
-
 .portfolio-project-wrapper {
   @include responsive-padding;
-  border: solid red;
   position: relative;
   margin-top: 140px;
 
@@ -58,7 +52,6 @@
   }
 }
 
-
 .portfolio-img-wrapper {
   position: relative;
   z-index: 3;
@@ -68,14 +61,12 @@
   }
 }
 
-
 .project-flex-container {
   display: flex;
   width: 100%;
   align-items: center;
 
   gap: 80px;
-  border: solid blue;
 
   &:hover {
     .project-description {
@@ -97,7 +88,6 @@
     filter: none;
   }
 }
-
 
 .portfolio-img-border {
   z-index: 3;
@@ -126,16 +116,13 @@
   }
 }
 
-
 .grayscale {
   filter: grayscale(100%);
   z-index: 4;
 }
 
-
 .project-description,
 .project-description-even {
-  border: solid blue;
   display: none;
   flex-direction: column;
   font-size: 45px;
@@ -146,14 +133,11 @@
     font-family: "syne";
     font-weight: 800;
     font-size: 1em;
-    // padding-bottom: 8px;
   }
 
   .technologies {
     font-family: "overpass";
     font-size: 0.5em;
-    color: #FF9900;
-    // padding-bottom: 8px;
   }
 
   .description {
@@ -163,9 +147,7 @@
   }
 }
 
-
 .description-btns {
-  border: solid orange;
   display: flex;
   gap: 40px;
 
@@ -208,7 +190,6 @@
     transform: translateX(0%);
   }
 }
-
 
 @keyframes right-to-left {
   from {
@@ -259,7 +240,6 @@
 
 //-------------------- RESPONSIVNESS --------------------//
 
-
 //-------------------- 1110px --------------------//
 @media(max-width: 1110px) {
   .project-flex-container {
@@ -306,7 +286,14 @@
 
   .portfolio-header-container {
     .portfolio-header-wrapper {
-      font-size: 35px;
+      h2 {
+        font-size: calc(78px * 0.8);
+      }
+
+      p {
+
+        font-size: calc(23px * 0.8);
+      }
     }
   }
 
@@ -324,7 +311,6 @@
     max-width: 450px;
   }
 
-  // font-size em basis for all children 
   .project-description,
   .project-description-even {
     font-size: 31.5px;
@@ -367,13 +353,20 @@
 
   .portfolio-header-container {
     .portfolio-header-wrapper {
-      font-size: 30px;
+      h2 {
+        font-size: calc(78px * 0.8 * 0.8);
+      }
+
+      p {
+
+        font-size: calc(23px * 0.8 * 0.8);
+      }
     }
   }
 
-
   .portfolio-project-wrapper {
     height: 315px;
+    margin-top: 106px;
   }
 
   .portfolio-img-wrapper {
@@ -399,7 +392,6 @@
     }
   }
 
-
   .project-description,
   .project-description-even {
     font-size: 22px;
@@ -415,7 +407,6 @@
   }
 
   .description-btns {
-
     .test-btn,
     .git-btn {
       width: calc(140px * 0.7);
@@ -443,16 +434,22 @@
       }
     }
   }
-}
 
-.portfolio-header-container {
-  .portfolio-header-wrapper {
-    font-size: 25px;
+  .portfolio-header-container {
+    .portfolio-header-wrapper {
+      h2 {
+        font-size: calc(78px * 0.8 * 0.8 * 0.8);
+      }
+  
+      p {
+  
+        font-size: calc(23px * 0.8 * 0.8 * 0.8);
+      }
+    }
   }
 }
 
-
-
+//-------------------- 370px --------------------//
 @media(max-width: 370px) {
   .portfolio-img-wrapper {
     img {

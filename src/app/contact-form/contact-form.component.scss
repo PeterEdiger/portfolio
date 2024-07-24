@@ -5,16 +5,12 @@
 }
 
 .arrow-holder {
-  border: solid orange;
   margin-top: 50px;
-  // padding: 0 150px;
-  // @include responsive-padding;
   display: flex;
   justify-content: flex-end;
 }
 
 .black-container {
-  border: solid red;
   position: relative;
   height: fit-content;
   background-color: black;
@@ -35,7 +31,6 @@
   left: 0;
   padding-left: 7%;
   padding-bottom: 32px;
-  border: solid orange;
 }
 
 .say-hi {
@@ -63,7 +58,6 @@
 
 // -------------------- FORM -------------------- // 
 .form-wrapper {
-  border: solid orange;
   @include responsive-padding;
   margin-top: 24px;
 }
@@ -74,8 +68,6 @@ form {
   input {
     width: 100%;
   }
-
-  // border: solid red;
 }
 
 .name {
@@ -103,7 +95,6 @@ form {
 
 .form-wrapper textarea {
   height: 150px;
-  /* Adjust the height as needed */
 }
 
 .submit-btn {
@@ -111,7 +102,6 @@ form {
   margin-top: 24px;
   width: 252px;
   height: 60px;
-  // padding: 30px 10px;
   border: solid #BBBBBB 4px;
   background-color: black;
   opacity: 30%;
@@ -191,7 +181,6 @@ form {
   }
 }
 
-
 label {
   color: red;
 }
@@ -248,7 +237,6 @@ label {
     padding-top: 80px;
   }
 
-
   .form-wrapper input::placeholder,
   .form-wrapper textarea::placeholder
   {
@@ -268,7 +256,6 @@ label {
       font-size: calc(20px * 0.9 * 0.8) ;
     }
   }
-
 }
 
 //-------------------- 450px --------------------//
@@ -280,8 +267,6 @@ label {
   .discuss-new-project {
     font-size: 18px;
   }
-
-
 }
 
 //-------------------- 380px --------------------//
@@ -289,5 +274,4 @@ label {
   .say-hello {
     font-size: 14px;
   }
-
 }

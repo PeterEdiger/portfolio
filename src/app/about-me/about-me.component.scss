@@ -12,15 +12,11 @@ a{
   justify-content: center;
   margin-top: 140px;
   padding: 0 0 30px 60px;
-  border: solid red;
 
   h2{
     font-family: "syne";
     font-size: 70px;
     font-weight: 800;
-  }
-  img {
-    border: solid green;
   }
 }
 
@@ -30,18 +26,14 @@ a{
 }
 
 .about-me__text-photo {
-  // width: 100%;
   @include responsive-padding;
-  border: solid orange;
   display: flex;
-  // flex-direction: column;
   padding: 0 70px 0 60px;
   justify-content: space-between;
   gap: 30px;
 }
 
 .text-and-button-container {
-  border: solid blue;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -68,16 +60,13 @@ a{
   flex-direction: column;
 }
 
-//-------------- single styles ------------------//
 .face-hero {
   width: 300px;
-  border: solid red;
 }
 
 .left-arrow {
   transform: translateX(-40%);
 }
-
 
 // ---------------------------------- RESPONSIVNESS ---------------------------------- //
 @media(max-width: 750px) {
@@ -89,7 +78,6 @@ a{
     h2{
       font-size: 50px;
     }
-
   }
 
   .text-and-button-container {
@@ -113,6 +101,10 @@ a{
       font-size: 40px;
     }
   }
+
+  .left-arrow {
+    transform: translateX(-30%);
+  }
 }
 
 @media(max-width: 450px){
@@ -121,7 +113,5 @@ a{
       font-size: 30px;
     }
   }
-
-
 }
 
