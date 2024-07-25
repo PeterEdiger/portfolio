@@ -69,3 +69,54 @@ $padding-small: 20px;
     padding-right: $padding-small;
   }
 }
+
+//------------------------- CUSTOM SCROLLBAR -------------------------//
+
+body::-webkit-scrollbar {
+  width: 12px; /* Breite des Scrollbalkens */
+  background: #FFFCF3; /* Hintergrundfarbe des Scrollbalkens */
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #FFFCF3; /* Hintergrundfarbe des Tracks */
+  border: 1px solid black; /* Randfarbe des Tracks */
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  min-height: 30px;
+  background: #FFFCF3; /* Farbe des Griffs des Scrollbalkens */
+  border: 2px solid black; /* Randfarbe des Griffs des Scrollbalkens */
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #FFFCF3; /* Farbe des Griffs des Scrollbalkens bei Hover */
+}
+
+textarea::-webkit-scrollbar {
+  width: 12px; /* Breite des Scrollbalkens */
+  background: #FFFCF3; /* Hintergrundfarbe des Scrollbalkens */
+  border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #FFFCF3; /* Hintergrundfarbe des Tracks */
+  border: 1px solid black; /* Randfarbe des Tracks */
+  border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  min-height: 30px;
+  background: black; /* Farbe des Griffs des Scrollbalkens */
+  border: 1px solid black; /* Randfarbe des Griffs des Scrollbalkens */
+  border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #FFFCF3; /* Farbe des Griffs des Scrollbalkens bei Hover */
+}
+  

@@ -5,35 +5,31 @@
   <div class="burger-and-translation-btns d-flex center-all">
     <span (click)="switchLanguage('de')">DE</span>
     <span (click)="switchLanguage('en')">EN</span>
-    <span>
-      <input (click)="burgerToggle()" type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
-      <label for="checkbox3">
-        <div class="hamburger hamburger3">
-          <span class="bar bar1"></span>
-          <span class="bar bar2"></span>
-          <span class="bar bar3"></span>
-          <span class="bar bar4"></span>
-        </div>
-      </label>
-    </span>
+    <div class="menu" [class.open]="isMenuOpen" (click)="toggleMenu()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+
   </div>
+
 </header>
 
 <div class="burger-dialog " [ngClass]="{'d-none': visibility}">
   <div class="burger-menu-hrefs d-flex column">
-    <a (click)="burgerToggle()" href="#about-me">
+    <a (click)="toggleMenu()" href="#about-me">
       <h2>About me
         <div class="small-rectangle"></div>
       </h2>
     </a>
 
-    <a (click)="burgerToggle()" href="#my-skills">
+    <a (click)="toggleMenu()" href="#my-skills">
       <h2>My Skills
         <div class="small-rectangle"></div>
       </h2>
     </a>
 
-    <a (click)="burgerToggle()" href="#portfolio">
+    <a (click)="toggleMenu()" href="#portfolio">
       <h2>Portfolio
         <div class="small-rectangle"></div>
       </h2>

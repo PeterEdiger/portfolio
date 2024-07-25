@@ -38,7 +38,7 @@ export class HeaderComponent {
  * Toggles the visibility of a menu and updates the document's overflow style accordingly.
  * When the menu is visible, it disables scrolling on the body. When hidden, it re-enables scrolling.
  */
-  burgerToggle() {
+  showMenu() {
     if (this.visibility) {
       document.body.style.overflow = 'hidden';
       this.visibility = false;
@@ -47,5 +47,17 @@ export class HeaderComponent {
       document.body.style.overflow = '';
       this.visibility = true;
     }
+  }
+
+
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.showMenu()
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
   }
 }
