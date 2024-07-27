@@ -55,6 +55,7 @@ a{
 }
 
 .photo-arrow {
+  position:relative;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -64,8 +65,20 @@ a{
   width: 300px;
 }
 
+.left-arrow-container{
+  display: flex;
+  justify-content: flex-end;
+  &:hover {
+    transition: transform 500ms ease;
+    transform: translate(-40px, 40px);  }
+}
+
+
 .left-arrow {
+  top: 0;
+  left: 0;
   transform: translateX(-40%);
+  transition: transform 0.3s ease;
 }
 
 // ---------------------------------- RESPONSIVNESS ---------------------------------- //
