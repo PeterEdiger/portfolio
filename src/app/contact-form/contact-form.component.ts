@@ -28,10 +28,10 @@ export class ContactFormComponent {
   };
 
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://peter-ediger.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

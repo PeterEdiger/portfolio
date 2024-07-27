@@ -77,6 +77,11 @@ form {
   padding: 10px 0;
   margin-bottom: 20px;
   font-size: 16px;
+
+  &:hover{
+    border: solid white 2px;
+    cursor: pointer;
+  }
 }
 
 .form-wrapper input::placeholder,
@@ -113,10 +118,15 @@ form {
 }
 
 .textarea-wrapper {
+  height: fit-content;
   position: relative;
-
   textarea {
     width: 100%;
+    height: 200px;
+  }
+
+  #message{
+    padding-left: 16px;
   }
 
   span {
@@ -125,6 +135,10 @@ form {
     right: 5%;
     font-family: "overpass";
   }
+}
+
+textarea:hover{
+  cursor: pointer;
 }
 
 .email-input-wrapper {
@@ -138,6 +152,10 @@ form {
   }
 }
 
+#email{
+  padding-left: 16px;
+}
+
 .name-input-wrapper {
   position: relative;
 
@@ -147,6 +165,10 @@ form {
     right: 5%;
     font-family: "overpass";
   }
+}
+
+#name{
+  padding-left: 16px;
 }
 
 .checkbox-wrapper {

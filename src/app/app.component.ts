@@ -33,7 +33,6 @@ export class AppComponent implements OnInit {
       .subscribe(event => {
         this.isImprintRoute = (event as NavigationEnd).urlAfterRedirects === '/imprint';
         
-        // Überprüfe, ob die URL ein Anker-Tag enthält
         const navigationEndEvent = event as NavigationEnd;
         if (!navigationEndEvent.urlAfterRedirects.includes('#')) {
           window.scrollTo(0, 0);
