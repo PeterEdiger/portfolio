@@ -20,7 +20,7 @@
 
       <div class="name-input-wrapper">
         <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
-          [placeholder]="'FORM.PLACEHOLDER.NAME' | translate" autocomplete="on" required>
+          [placeholder]="'FORM.PLACEHOLDER.NAME' | translate" autocomplete="off" required>
         @if(!name.valid && message.touched){
         <span class="enter-message"> {{"WARNING.NAME" | translate}} </span>
         }
@@ -28,7 +28,7 @@
 
       <div class="email-input-wrapper">
         <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-          [placeholder]="'FORM.PLACEHOLDER.MAIL' | translate" autocomplete="on" required
+          [placeholder]="'FORM.PLACEHOLDER.MAIL' | translate" autocomplete="off" required
           pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
         @if(!email.valid && message.touched){
         <span class="enter-message"> {{"WARNING.MAIL" | translate}} </span>

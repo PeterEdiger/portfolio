@@ -118,16 +118,26 @@ form {
     font-size: 23px;
   }
 
+  &:hover{
+    cursor: auto
+  }
+
 }
 
 .valid-submit-btn {
-  @extend .submit-btn;
-  border: solid white 4px;
-  opacity: 1;
+  @extend .invalid-submit-btn;
+  border: solid #FFFCF3 4px;
+  opacity: 0.8;
 
   span {
-    color: white;
+    color: #FFFCF3;
+    font-weight: 600;
   }
+
+  &:hover{
+    cursor: pointer;
+  }
+
 }
 
 
