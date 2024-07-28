@@ -15,7 +15,6 @@
   width: 100vw;
   max-width: 1440px;
   margin-top: 100px;
-  border: solid red; 
 }
 
 p {
@@ -60,17 +59,10 @@ p {
   }
 }
 
-.scroll-down-wrapper{
-  // @include responsive-padding;
-  // width: fit-content;
-  width: 100%;
-  // border: solid red;
-}
 
-.scroll-down {
+.scroll-down-wrapper {
   display: flex;
   @include responsive-padding;
-  border: solid red;
   justify-content: space-between;
 
   .email {
@@ -81,7 +73,7 @@ p {
     font-size: 23px;
   }
 
-  .scroll-d {
+  .scroll-down-element {
     // border: solid orange;
     align-items: center;
 
