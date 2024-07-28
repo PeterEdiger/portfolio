@@ -36,7 +36,6 @@
   }
 }
 
-
 .discuss-new-project {
   font-family: "overpass";
   font-weight: 900;
@@ -62,7 +61,6 @@
 
 form {
   width: 600px;
-
   input {
     width: 100%;
   }
@@ -74,10 +72,13 @@ form {
 
 .form-wrapper input,
 .form-wrapper textarea {
+  box-sizing: border-box;
   background-color: black;
   color: white;
-  border: none;
+  border-top: 2px solid black;
   border-bottom: 2px solid white;
+  border-left: none;
+  border-right: none;
   outline: none;
   padding: 10px 0;
   margin-bottom: 20px;
@@ -118,6 +119,17 @@ form {
   }
 }
 
+.invalid-btn {
+  @extend .submit-btn;
+  border: solid white 4px;
+  opacity: 1;
+
+  span {
+    color: white;
+  }
+}
+
+
 .enter-message {
   color: orange
 }
@@ -149,6 +161,7 @@ textarea:hover {
 
 .email-input-wrapper {
   position: relative;
+  box-sizing: border-box;
 
   span {
     position: absolute;
@@ -164,7 +177,7 @@ textarea:hover {
 
 .name-input-wrapper {
   position: relative;
-
+  
   span {
     position: absolute;
     top: 5%;

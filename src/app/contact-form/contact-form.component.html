@@ -5,7 +5,7 @@
 
 
 <div class="black-container">
-  
+
 
   <div class="say-hi">
     <img src="./assets/img/contact-form/say-hi.png" alt="">
@@ -20,7 +20,7 @@
 
       <div class="name-input-wrapper">
         <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
-          [placeholder]="'FORM.PLACEHOLDER.NAME' | translate" autocomplete="off" required>
+          [placeholder]="'FORM.PLACEHOLDER.NAME' | translate" autocomplete="on" required>
         @if(!name.valid && message.touched){
         <span class="enter-message"> {{"WARNING.NAME" | translate}} </span>
         }
@@ -28,7 +28,7 @@
 
       <div class="email-input-wrapper">
         <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-          [placeholder]="'FORM.PLACEHOLDER.MAIL' | translate" autocomplete="off" required
+          [placeholder]="'FORM.PLACEHOLDER.MAIL' | translate" autocomplete="on" required
           pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
         @if(!email.valid && message.touched){
         <span class="enter-message"> {{"WARNING.MAIL" | translate}} </span>
@@ -45,14 +45,14 @@
 
       <div class="checkbox-wrapper">
         <div>
-          <input type="checkbox" id="consent" name="consent" required>
+          <input type="checkbox" id="consent" name="consent" required [(ngModel)] = "contactData.consent">
         </div>
         <label id="terms"> {{"PRIVACY-POLICY.PART-A" |translate}} <span class="privacy-policy"
             [routerLink]="'/privacy-policy'"> {{"PRIVACY-POLICY.PART-B" | translate}} </span> {{"PRIVACY-POLICY.PART-C"
           |translate}} </label>
       </div>
 
-      <button class="submit-btn d-flex center-all">
+      <button class="d-flex center-all submit-btn " [ngClass]="{'invalid-btn': contactForm.valid, 'submit-btn': !contactForm.valid}">
         <span> {{"SEND-MESSAGE" | translate}} </span>
       </button>
 

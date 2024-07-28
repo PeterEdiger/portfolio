@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
@@ -8,6 +9,7 @@ import { TranslateModule } from '@ngx-translate/core';
   selector: 'app-contact-form',
   standalone: true,
   imports: [
+    CommonModule,
     FormsModule,
     ReactiveFormsModule,
     RouterLink,
@@ -24,11 +26,13 @@ export class ContactFormComponent {
   contactData = {
     name: "",
     email: "",
-    message: ""
+    message: "",
+    consent: false,
   };
 
 
   mailTest = false;
+  activateButton = false;
 
   post = {
     endPoint: 'https://peter-ediger.de/sendMail.php',
@@ -45,7 +49,7 @@ export class ContactFormComponent {
   
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-
+      
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
