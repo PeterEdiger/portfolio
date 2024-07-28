@@ -52,7 +52,7 @@
           |translate}} </label>
       </div>
 
-      <button class="d-flex center-all submit-btn " [ngClass]="{'invalid-btn': contactForm.valid, 'submit-btn': !contactForm.valid}">
+      <button class="d-flex center-all" [ngClass]="{'valid-submit-btn': contactForm.valid, 'invalid-submit-btn': !contactForm.valid}">
         <span> {{"SEND-MESSAGE" | translate}} </span>
       </button>
 

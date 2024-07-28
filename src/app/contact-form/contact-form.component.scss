@@ -101,7 +101,7 @@ form {
   height: 150px;
 }
 
-.submit-btn {
+.invalid-submit-btn {
   margin: 0 auto;
   margin-top: 24px;
   width: 252px;
@@ -117,9 +117,10 @@ form {
     font-weight: 400;
     font-size: 23px;
   }
+
 }
 
-.invalid-btn {
+.valid-submit-btn {
   @extend .submit-btn;
   border: solid white 4px;
   opacity: 1;
