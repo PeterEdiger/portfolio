@@ -16,10 +16,10 @@
 
 
   <div class="form-wrapper d-flex-j-c">
-    <div class="success-msg buttom-to-base d-flex center-all" [ngClass]= "{ }" > {{"CONTACT.SUCCESS-MSG" | translate }} </div>
+    <div class="success-msg buttom-to-base d-flex" [ngClass]= "{'d-none': !successMsg, 'buttom-to-base': successMsg}" > {{"CONTACT.SUCCESS-MSG" | translate }} </div>
     <form class="d-flex column" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-      <!-- 'buttom-to-base': successMsg -->
-      <!-- 'd-none': !successMsg, -->
+      
+      
       <div class="name-input-wrapper">
         <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
           [placeholder]="'FORM.PLACEHOLDER.NAME' | translate" autocomplete="off" required>

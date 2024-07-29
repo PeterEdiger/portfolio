@@ -64,10 +64,11 @@
 }
 
 .success-msg{
+  background-color: black;
   font-family: "overpass";
   padding: 16px;
   position: absolute;
-  bottom: 50%; 
+  bottom: 40%; 
   left: 50%; 
   // width: 50%;
   transform: translateX(-50%);
@@ -253,7 +254,7 @@ label {
 // --------------------------- ANIMATIONS ---------------------------//
 @keyframes buttom-to-base {
   from {
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 200%);
   }
 
   to {

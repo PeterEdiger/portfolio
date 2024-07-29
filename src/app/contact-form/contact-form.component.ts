@@ -72,7 +72,7 @@ export class ContactFormComponent {
     this.successMsg = true;
     setTimeout(() => {
       this.successMsg = false;
-    }, 2750);
+    }, 3000);
   }
 
 }
