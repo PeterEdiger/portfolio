@@ -14,7 +14,8 @@
 
   "CONTACT": {
     "DISCUSS-PROJECT":"Sie möchten ein Projekt verwirklichen?",
-    "DO-IT": "Lassen Sie uns sprechen!"
+    "DO-IT": "Lassen Sie uns sprechen!",
+    "SUCCESS-MSG": "Nachricht versendet"
     }, 
 
   "FORM": {

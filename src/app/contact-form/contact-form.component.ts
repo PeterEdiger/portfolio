@@ -33,6 +33,7 @@ export class ContactFormComponent {
 
   mailTest = false;
   activateButton = false;
+  successMsg = false;
 
   post = {
     endPoint: 'https://peter-ediger.de/sendMail.php',
@@ -46,24 +47,34 @@ export class ContactFormComponent {
   };
 
 
-  
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => {
+            console.info('send post complete');
+            this.showSuccessMsg()
+          }
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       ngForm.resetForm();
     }
   }
 
+
+  showSuccessMsg() {
+    this.successMsg = true;
+    setTimeout(() => {
+      this.successMsg = false;
+    }, 2750);
+  }
+
 }
+
+

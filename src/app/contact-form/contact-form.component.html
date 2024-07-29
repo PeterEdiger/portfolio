@@ -16,8 +16,10 @@
 
 
   <div class="form-wrapper d-flex-j-c">
+    <div class="success-msg buttom-to-base d-flex center-all" [ngClass]= "{ }" > {{"CONTACT.SUCCESS-MSG" | translate }} </div>
     <form class="d-flex column" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-
+      <!-- 'buttom-to-base': successMsg -->
+      <!-- 'd-none': !successMsg, -->
       <div class="name-input-wrapper">
         <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
           [placeholder]="'FORM.PLACEHOLDER.NAME' | translate" autocomplete="off" required>
@@ -45,14 +47,15 @@
 
       <div class="checkbox-wrapper">
         <div>
-          <input type="checkbox" id="consent" name="consent" required [(ngModel)] = "contactData.consent">
+          <input type="checkbox" id="consent" name="consent" required [(ngModel)]="contactData.consent">
         </div>
         <label id="terms"> {{"PRIVACY-POLICY.PART-A" |translate}} <span class="privacy-policy"
             [routerLink]="'/privacy-policy'"> {{"PRIVACY-POLICY.PART-B" | translate}} </span> {{"PRIVACY-POLICY.PART-C"
           |translate}} </label>
       </div>
 
-      <button class="d-flex center-all" [ngClass]="{'valid-submit-btn': contactForm.valid, 'invalid-submit-btn': !contactForm.valid}">
+      <button class="d-flex center-all"
+        [ngClass]="{'valid-submit-btn': contactForm.valid, 'invalid-submit-btn': !contactForm.valid}">
         <span> {{"SEND-MESSAGE" | translate}} </span>
       </button>
 
