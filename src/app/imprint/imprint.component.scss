@@ -3,8 +3,8 @@
   font-size: 50px ;
   height: 100vh;
   box-sizing: border-box;
-  border: solid green;
-  padding-top: 100px;
+  padding-top: 150px;
+  padding-left: 64px;
   height: calc(100vh - 141px)  ;
   span{
     font-family: "overpass";
@@ -16,11 +16,21 @@ h1{
 }
 
 h2{
+  margin: 40px 0 8px 0;
   font-size: 0.7em;
 }
 
 .imprint-wrapper{
   span{
     font-size: 0.5em;
+  }
+}
+
+//------------------------------ RESPONSIVNESS ------------------------------//
+
+@media(max-width: 450px){
+  .imprint-wrapper{
+    padding-left: 24px;
+    font-size: 45px;
   }
 }

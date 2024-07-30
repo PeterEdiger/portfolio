@@ -6,9 +6,15 @@
       <span>&#169; Peter Ediger 2024 </span>
     </div>
     <div class="footer-icons-container d-flex">
-      <img src="./assets/img/footer/email-icon.png" alt="">
-      <img src="./assets/img/footer/github-icon.png" alt="">
-      <img src="./assets/img/footer/linkedin-icon.png" alt="">
+      <a href="mailto:info@peter-ediger.de" class="mail">
+        <img src="./assets/img/footer/email-icon.png" alt="">
+      </a>
+      <a href="https://github.com/PeterEdiger/" target="_blank">
+        <img src="./assets/img/footer/github-icon.png" alt="">
+      </a>
+      <a href="https://www.linkedin.com/in/peter-ediger-bb6b0231b/" target="_blank">
+        <img src="./assets/img/footer/linkedin-icon.png" alt="">
+      </a>
       <a href="#start">
         <img class="arrow-up-white" src="./assets/img/footer/arrow-up-white.png" alt="">
       </a>
@@ -17,7 +23,7 @@
   </footer>
 
   <div class="legal-notice-container">
-    <span [routerLink]="'/imprint'"> Imprint </span>
+    <span [routerLink]="'/imprint'"> {{"FOOTER.IMPRINT" | translate}}  </span>
   </div>
 
 </div>

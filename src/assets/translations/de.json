@@ -44,7 +44,7 @@
     "PRIVACY_POLICY_TITLE": "Datenschutzerklärung",
     "PRIVACY_POLICY_INTRO": "In dieser Datenschutzerklärung informieren wir Sie über die Verarbeitung personenbezogener Daten bei der Nutzung dieser Website.",
     "RESPONSIBLE_TITLE": "Verantwortlicher",
-    "RESPONSIBLE_INFO": "Verantwortlich für die Datenverarbeitung ist:<br><em>Peter Ediger, Marnitzstraße 20b 21033 Hamburg, 01771947128, peter_edg@web.de</em>",
+    "RESPONSIBLE_INFO": "Verantwortlich für die Datenverarbeitung ist:<br><em>Peter Ediger, Marnitzstraße 20b 21033 Hamburg, 01771947128, info@peter-ediger.de</em>",
     "PERSONAL_DATA_TITLE": "Personenbezogene Daten",
     "PERSONAL_DATA_INFO": "Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (betroffene Person) beziehen. Als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.",
     "DATA_ON_WEBSITE_CALL_TITLE": "Daten beim Websiteaufruf",
@@ -72,7 +72,17 @@
       "COMPLAINT_RIGHT": "Sie haben das Recht, sich bei einem vermuteten Verstoß gegen das Datenschutzrecht bei der zuständigen Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Zuständig ist die Aufsichtsbehörde an Ihrem üblichen Aufenthaltsort, Arbeitsplatz oder am Ort des vermuteten Verstoßes."
     },
     "SOURCE": "Quelle",
-    "SOURCE_LINK": "Muster-Datenschutzerklärung von anwalt.de"
+    "SOURCE_LINK": "Muster-Datenschutzerklärung von anwalt.de",
 
+    "FOOTER": {
+      "IMPRINT": "Impressum"
+    },
+    
+    "IMPRINT": {
+      "IMPRINT": "Impressum",
+      "CONTACT": "Kontakt"
+    } 
+
+    
   }
   
