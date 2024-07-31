@@ -49,9 +49,13 @@
         <div>
           <input type="checkbox" id="consent" name="consent" required [(ngModel)]="contactData.consent">
         </div>
+        
         <label id="terms"> {{"PRIVACY-POLICY.PART-A" |translate}} <span class="privacy-policy"
             [routerLink]="'/privacy-policy'"> {{"PRIVACY-POLICY.PART-B" | translate}} </span> {{"PRIVACY-POLICY.PART-C"
           |translate}} </label>
+          @if(!contactData.consent){
+            <span class="consent-privacy-p"> {{ "PRIVACY-POLICY.ACCEPT-MSG" | translate }} </span>
+          }
       </div>
 
       <button class="d-flex center-all"

@@ -123,7 +123,7 @@ form {
 
 .invalid-submit-btn {
   margin: 0 auto;
-  margin-top: 24px;
+  margin-top: 32px;
   width: 252px;
   height: 60px;
   border: solid #BBBBBB 4px;
@@ -222,6 +222,7 @@ textarea:hover {
 }
 
 .checkbox-wrapper {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -249,6 +250,15 @@ textarea:hover {
 
 label {
   color: red;
+}
+
+.consent-privacy-p{
+  position: absolute;
+  top: 32px;
+  left: 8px;
+  color: red;
+  font-family: "overpass";
+  opacity: 0.7;
 }
 
 // --------------------------- ANIMATIONS ---------------------------//

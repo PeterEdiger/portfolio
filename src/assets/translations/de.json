@@ -35,7 +35,9 @@
   "PRIVACY-POLICY": {
     "PART-A": "Ich habe die",
     "PART-B": "Datenschutzerklärung",
-    "PART-C": "gelesen und bin mit der beschriebenen Verarbeitung meiner Daten einverstanden."
+    "PART-C": "gelesen und bin mit der beschriebenen Verarbeitung meiner Daten einverstanden.",
+    "ACCEPT-MSG": "Bitte akzeptieren Sie die Geschäftsbedingungen."
+
   },
 
   "SEND-MESSAGE": "Senden",

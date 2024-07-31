@@ -35,7 +35,8 @@
   "PRIVACY-POLICY": {
     "PART-A": "I've read the",
     "PART-B": "privacy policy",
-    "PART-C": "and agree to the processing of my data as outlined"
+    "PART-C": "and agree to the processing of my data as outlined",
+    "ACCEPT-MSG": "Please accept the privacy policy."
   },
 
   "SEND-MESSAGE": "Send message",
