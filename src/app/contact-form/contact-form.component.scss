@@ -123,7 +123,7 @@ form {
 
 .invalid-submit-btn {
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 48px;
   width: 252px;
   height: 60px;
   border: solid #BBBBBB 4px;
@@ -253,8 +253,9 @@ label {
 }
 
 .consent-privacy-p{
+  font-size: 16px;
   position: absolute;
-  top: 32px;
+  bottom: -24px;
   left: 8px;
   color: red;
   font-family: "overpass";
@@ -351,6 +352,7 @@ label {
   }
 
   .checkbox-wrapper {
+    border: solid orange;
     label {
       font-size: 14px;
     }
@@ -394,7 +396,9 @@ label {
     border: solid orange 1.5px;
   }
 
-
+  .consent-privacy-p{
+    font-size: 10px;
+  }
 }
 
 

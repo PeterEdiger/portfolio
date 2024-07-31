@@ -2,7 +2,7 @@
   <a href="#start">
     <img [routerLink]="'/'" src="/assets/img/header/initials_logo.png" alt="">
   </a>
-  <div class="burger-and-translation-btns d-flex center-all">
+  <div class="burger-and-translation-btns d-flex center-all" id="scroll-top">
     <span (click)="switchLanguage('de')">DE</span>
     <span (click)="switchLanguage('en')">EN</span>
     <div class="menu" [class.open]="isMenuOpen" (click)="toggleMenu()">
