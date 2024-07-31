@@ -31,7 +31,8 @@ export class AppComponent implements OnInit {
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(event => {
-        this.isImprintRoute = (event as NavigationEnd).urlAfterRedirects === '/imprint';
+        this.isImprintRoute = (event as NavigationEnd).urlAfterRedirects === '/imprint' || (event as NavigationEnd).urlAfterRedirects === '/privacy-policy'
+        
         
         const navigationEndEvent = event as NavigationEnd;
         if (!navigationEndEvent.urlAfterRedirects.includes('#')) {

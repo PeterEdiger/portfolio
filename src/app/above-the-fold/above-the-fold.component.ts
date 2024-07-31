@@ -17,7 +17,6 @@ export class AboveTheFoldComponent {
       }, 350);
     }
 
-    // constructor finish!
   
     arrowN : number= 1
 
