@@ -17,6 +17,11 @@ a {
     font-family: "syne";
     font-size: 70px;
     font-weight: 800;
+
+    &:hover{
+      color: #FF9900;
+      cursor: default;
+    }
   }
 }
 

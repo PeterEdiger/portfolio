@@ -34,6 +34,13 @@
   }
 }
 
+.portfolio-head {
+  &:hover{
+    color: #FF9900;
+    cursor: default;
+  }
+}
+
 .portfolio-project-wrapper {
   @include responsive-padding;
   position: relative;
@@ -408,6 +415,7 @@
   }
 
   .description-btns {
+
     .test-btn,
     .git-btn {
       width: calc(140px * 0.7);
@@ -441,9 +449,9 @@
       h2 {
         font-size: calc(78px * 0.8 * 0.8 * 0.8);
       }
-  
+
       p {
-  
+
         font-size: calc(23px * 0.8 * 0.8 * 0.8);
       }
     }

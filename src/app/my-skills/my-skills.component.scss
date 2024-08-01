@@ -30,6 +30,12 @@
   font-family: "syne";
   font-weight: 800;
   font-size: 70px;
+
+  &:hover{
+    color: #FF9900;
+    cursor: default;
+  }
+
 }
 
 .skills-icons-wrapper {
@@ -41,12 +47,22 @@
   flex-wrap: wrap;
 
   .icons-holder {
+    overflow-x: hidden;
     align-items: center;
     width: fit-content;
     gap: 8px;
     display: flex;
     flex-direction: column;
     margin-bottom: 8%;
+
+    &:hover{
+      color:#FF9900;
+      >img {
+        transition: transform .3s ease-in-out;
+        transform:  translateX(110%) ;
+        animation: slide-in .4s ease-in-out .35s forwards ;
+      }
+    }
   }
 
   span {
@@ -62,6 +78,17 @@
   &:hover {
     transition: transform 500ms ease;
     transform: translate(40px, 40px);
+  }
+}
+
+
+//--------------------- ANIMATIONS ----------------------- //
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 
