@@ -65,6 +65,8 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: fit-content;
+  align-self: center;
 }
 
 .face-hero {
