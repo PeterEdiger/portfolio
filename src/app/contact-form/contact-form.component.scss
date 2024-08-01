@@ -60,7 +60,6 @@
   overflow-y: hidden;
   position: relative;
   margin-top: 24px;
-  // border: solid green;
 }
 
 .success-msg{
@@ -70,7 +69,6 @@
   position: absolute;
   bottom: 40%; 
   left: 50%; 
-  // width: 50%;
   transform: translateX(-50%);
   font-size: 24px;
   height: 20px;
@@ -352,7 +350,6 @@ label {
   }
 
   .checkbox-wrapper {
-    border: solid orange;
     label {
       font-size: 14px;
     }
