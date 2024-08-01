@@ -55,12 +55,17 @@
     flex-direction: column;
     margin-bottom: 8%;
 
+    span {
+      font-family: "overpass";
+      font-weight: 700;
+    }
+
     &:hover{
       color:#FF9900;
       >img {
         transition: transform .3s ease-in-out;
         transform:  translateX(110%) ;
-        animation: slide-in .4s ease-in-out .35s forwards ;
+        animation: left-to-right .3s ease-in-out .3s forwards ;
       }
     }
   }
@@ -83,7 +88,7 @@
 
 
 //--------------------- ANIMATIONS ----------------------- //
-@keyframes slide-in {
+@keyframes left-to-right {
   0% {
     transform: translateX(-100%);
   }
