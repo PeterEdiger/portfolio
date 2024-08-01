@@ -9,6 +9,7 @@
   span{
     font-family: "overpass";
   }
+  overflow-y: auto ;
 }
 
 h1{
@@ -32,5 +33,6 @@ h2{
   .imprint-wrapper{
     padding-left: 24px;
     font-size: 45px;
+    height: 86vh;
   }
 }
