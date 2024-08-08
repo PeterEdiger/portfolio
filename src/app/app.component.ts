@@ -32,8 +32,6 @@ export class AppComponent implements OnInit {
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(event => {
         this.isImprintRoute = (event as NavigationEnd).urlAfterRedirects === '/imprint' || (event as NavigationEnd).urlAfterRedirects === '/privacy-policy'
-        
-        
         const navigationEndEvent = event as NavigationEnd;
         if (!navigationEndEvent.urlAfterRedirects.includes('#')) {
           window.scrollTo(0, 0);
